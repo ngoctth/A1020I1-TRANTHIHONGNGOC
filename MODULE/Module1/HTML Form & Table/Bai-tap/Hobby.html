@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>SỞ THÍCH CỦA BẠN</title>
 </head>
 <body>
-<div class="a">
-<form style="background-color: darkorange">
-    <style bo
+<div class="b">
+<form action="Hobby.html" style="background-color: darkorange" >
     <span style="color: white"> SỞ THÍCH CỦA BẠN</span>
-</form><br></div>
-<form>
+<br></div>
     <span style="color: blue">Họ và tên</span>
     <input type="text" name="yourname" size="30"/>
-</form><br>
-<form>
+<br><br>
     <span style="color: blue">Email</span>
     <input type="text" name="email" size="20"/>
-</form><br>
-<form>
+<br><br>
     <span style="color: blue">Sở thích</span>
     <input type="checkbox" name="bobby" value="thethao"> Thể thao
     <input type="checkbox" name="hobby" value="luotweb"> Lướt web<br>
@@ -27,11 +23,9 @@
     <input type="checkbox" name="hobby" value="choigame"> Chơi game
     <input type="checkbox" name="hobby" value="docsach">Đọc sách
     <input type="checkbox" name="hobby" value="dienanh"> Điện ảnh
-</form><br>
-<form action="Hobby.html">
+<br><br>
     <input type="submit" value="Gửi thông tin"/>
     <input type="reset" value=" Nhập lại"/>
-</form>
 <style>
     .wufoo{
         font-family: "Lucida Sans Unicode","Lucida Grande", Tahoma, sans-serif;
@@ -41,5 +35,38 @@
 <style>
     div.a{text-align: center}
 </style>
+<h1><form style="background-color: aquamarine ">
+    <span style="color: blue"> ĐĂNG KÝ HỌC VIÊN</span>
+</h1><br>
+    <span style="color: blue">Họ và tên</span>
+    <input type="text" name="name" size="30"/>
+<br><br>
+    <span style="color: blue">Ngày sinh</span>
+    <input type="text" name="dayofbirth" size="15"/>
+<br><br>
+    <span style="color: blue">Giới tính</span>
+    <input type="radio" name="sex"> Nam
+    <input type="radio" name="sex"> Nữ
+<br><br>
+    <span style="color: blue">Địa chỉ</span>
+    <textarea cols="30" rows="3"></textarea>
+<br><br>
+    <span style="color: blue">Lớp</span>
+    <select name="class">
+        <option value="select">--Chọn lớp--</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+<br><br>
+    <span style="color: blue">Email</span>
+    <input type="text" name="email">
+<br><br>
+    <span style="color: blue"> Điện thoại</span>
+    <input type="text" name="phonenumber">
+<br><br>
+    <input type="button" value=" Đăng ký"/>
+    <input type="reset" value=" Nhập lại"/>
+</form>
 </body>
 </html>
