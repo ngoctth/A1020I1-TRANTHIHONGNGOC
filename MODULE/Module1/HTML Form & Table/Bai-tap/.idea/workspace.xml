@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccd98922-5bf1-4163-93a1-41a3e6c013e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Fomdangkinguoidung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laysurvey.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bttaobangnangcao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobangdongian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Thuc-hanh/SimpleTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Thuc-hanh/Thoikhoabieu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hobby.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hobby.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bttaobangnangcao.html" beforeDir="false" afterPath="$PROJECT_DIR$/bttaobangnangcao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobangdongian.html" beforeDir="false" afterPath="$PROJECT_DIR$/taobangdongian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +33,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -49,10 +51,22 @@
       <option name="presentableId" value="Default" />
       <updated>1605116168917</updated>
       <workItem from="1605116170401" duration="1178000" />
+      <workItem from="1605181622105" duration="2229000" />
+      <workItem from="1605186613431" duration="1608000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="110" key="FileChooserDialogImpl" timestamp="1605188567693">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="110" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605188567693" />
+    <state x="339" y="164" key="run.anything.popup" timestamp="1605187426149">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="164" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605187426149" />
   </component>
 </project>
