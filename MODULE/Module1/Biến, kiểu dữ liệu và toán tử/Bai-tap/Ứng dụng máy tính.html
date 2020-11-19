@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="input">
+    <input type="text" id="input1"><br><br>
+    <input type="button" value="Addition(+)" id="phepcong" onclick="add()">
+    <input type="button" value="Subtraction(-)" id="pheptru" - onclick="sub()">
+    <input type="button" value="Multiplication(x)" id="phepnhan" onclick="multi()">
+    <input type="button" value="Division(/)" id="phepchia" onclick="div()">
+<p id="ketqua">Result Devision:  </p>
+</form>
+</body>
+<script>
+
+    function add() {
+        let giaTri =parseInt(document.getElementById("input").value);
+        let giaTri1 =parseInt(document.getElementById("input1").value);
+        let tinhTong = giaTri+giaTri1;
+        document.getElementById("ketqua").innerHTML = "Result Devision:" +tinhTong;
+    }
+    function sub() {
+        let giaTri =parseInt(document.getElementById("input").value);
+        let giaTri1 =parseInt(document.getElementById("input1").value);
+        let tinhHieu = giaTri-giaTri1;
+        document.getElementById("ketqua").innerHTML = "Result Devision:" +tinhHieu;
+    }
+    function multi() {
+        let giaTri =parseInt(document.getElementById("input").value);
+        let giaTri1 =parseInt(document.getElementById("input1").value);
+        let tinhTich = giaTri*giaTri1;
+        document.getElementById("ketqua").innerHTML = "Result Devision:" +tinhTich;
+    }
+    function div() {
+        let giaTri =parseInt(document.getElementById("input").value);
+        let giaTri1 =parseInt(document.getElementById("input1").value);
+        let tinhThuong = giaTri/giaTri1;
+        document.getElementById("ketqua").innerHTML = "Result Devision:" +tinhThuong;
+    }
+
+</script>
+</html>
