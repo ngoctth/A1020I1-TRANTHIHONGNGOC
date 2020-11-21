@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="doReady()">
+<img src="118-1186673_totoro-for-asia-totoro-anh-bia-facebook.png" id="totoro" width="300px" style="position: absolute;left: 0; top: 0" />
+
+</body>
+<script>
+    function up() {
+        let move = document.getElementById("totoro");
+        move.style.top = parseInt(move.style.top) - 5 + "px";
+    }
+    function down() {
+        let move = document.getElementById("totoro");
+        move.style.top = parseInt(move.style.top) + 5 + "px";
+    }
+    function left() {
+        let move = document.getElementById("totoro");
+        move.style.left = parseInt(move.style.left) - 5 + "px";
+    }
+    function right() {
+        let move = document.getElementById("totoro");
+        move.style.left = parseInt(move.style.left) + 5 + "px";
+    }
+    function moveselect(evt) {
+        switch (evt.keyCode) {
+            case 37 :
+                left();
+                break;
+            case 39 :
+                right();
+                break;
+            case 38 :
+                up();
+                break;
+            case 40 :
+                 down();
+                 break;
+        }
+    }
+    function doReady() {
+        window.addEventListener("keyup", moveselect);
+    }
+
+
+
+
+</script>
+</html>

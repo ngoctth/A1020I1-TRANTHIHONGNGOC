@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <img src="116e3346b7d34d3aee1bd015bf555cb3.jfif" id="img" width="300px"/>
+        <br>
+        <p> Click button below to move the image to right </p>
+        <button type="button" onclick="moveRight()" >Click me</button>
+
+</body>
+<script>
+
+    let imge = null;
+    imge = document.getElementById("img");
+    function init (){
+        imge = document.getElementById("img");
+        imge.style.position = "relative";
+        imge.style.left = "0px";
+    }
+    function moveRight (){
+        imge.style.left = parseInt(imge.style.left) + 10 + "px";
+        }
+    window.onload = init;
+</script>
+</html>

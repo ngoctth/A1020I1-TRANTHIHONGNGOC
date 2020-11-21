@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="thang" placeholder="Nhập tháng"/>
+<button type="button" id="tinhsongay" onclick ="checkmonth()">Tính số ngày</button>
+<p id="kq"> </p>
+</body>
+<script>
+    function checkmonth(){
+    let th = document.getElementById("thang").value;
+    let kqua = " ";
+    switch (th) {
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+            kqua = "Tháng này có 31 ngày";
+            break;
+        case "2":
+            kqua = "Tháng này có 28 hoặc 29 ngày" ;
+            break;
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+            kqua = "Tháng này có 30 ngày";
+            break;
+    }
+        document.getElementById("kq").innerHTML=" " + kqua;
+    }
+</script>
+</html>
