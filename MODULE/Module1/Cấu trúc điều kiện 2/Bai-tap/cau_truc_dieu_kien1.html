@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
+    // let a = parseInt(prompt("Nhập a"));
+    // let b = parseInt(prompt("Nhập b"));
+    // let ketQua = a/b;
+    // if(a % b == 0){
+    //     alert("Kết quả = " + ketQua + ".  a chia hết cho b");
+    // } else {
+    //     alert("Kết quả = " + ketQua + ". a không chia hết cho b");
+    // }
+
+    // Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
+    // let tuoiHs = parseInt(prompt("Nhập tuổi học sinh: "));
+    // if(tuoiHs < 15){
+    //     alert("Tuổi không đủ điều kiện học lớp 10");
+    // } else if(tuoiHs > 15){
+    //     alert("Tuổi vượt quá điều kiện học lớp 10");
+    // } else{
+    //     alert("Đủ tuổi học lớp 10")
+    // }
+
+    //Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+    // let soNg = parseInt(prompt("Nhập số: "));
+    // if(soNg > 0){
+    //      alert("Giá trị lớn hơn 0");
+    //  } else {
+    //     if (soNg == 0) {
+    //         alert("Giá trị bằng 0")
+    //     } else {
+    //         alert("Giá trị nhỏ hơn 0");
+    //     }
+    // }
+    //Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    // let a = parseInt(prompt("Nhập số A"));
+    // let b = parseInt(prompt("Nhập số B"));
+    // let c = parseInt(prompt("Nhập số C"));
+    //     if(a > b){
+    //            if(a > c){
+    //             alert( " A là số lớn nhất" );
+    //     }
+    //     } else if (b > c)  {
+    //                alert(" B là số lớn nhất");
+    //     } else {
+    //                alert(" C là số lớn nhất");
+    //            }
+
+
+    //Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+
+    // let kiemTra = parseInt(prompt("Nhập điểm bài Kiểm tra"));
+    // let giuaKi = parseInt(prompt("Nhập điểm thi giữa kì"));
+    // let cuoiKi = parseInt(prompt("Nhập điểm thi cuối kì"));
+    // let trungBinh = (kiemTra + giuaKi + cuoiKi)/3;
+    // if(trungBinh > 8){
+    //     alert(" Đạt học lực giỏi");
+    // } else if(trungBinh > 7 ){
+    //     alert("Đạt học lực khá giỏi");
+    // } else if(trungBinh > 6 ){
+    //     alert("Đạt học lực khá");
+    // } else if(trungBinh >= 5 ) {
+    //     alert("Đạt học lực trung bình");
+    // } else {
+    //     alert("Đạt học lực yếu");
+    // }
+
+    //Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+    // let hoaDon = parseInt(prompt("Nhập giá trị hóa đơn"));
+    // if(hoaDon <= 200000){
+    //     alert("Hoa hồng bạn được nhận là " + hoaDon*parseFloat(0.03));
+    // } else if (hoaDon <= 500000){
+    //     alert("Hoa hồng bạn được nhận là " + ((hoaDon-200000)*parseFloat(0.05)+200000*parseFloat(0.03)));
+    // } else {
+    //     alert("Hoa hồng bạn được nhận là " + ((hoaDon-500000)*parseFloat(0.1)+300000*parseFloat(0.05)+200000*parseFloat(0.03)));
+    // }
+
+    //Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    let area = prompt("Nhập vào vùng gọi điện");
+    let soPhut = parseInt(prompt("Số phút đã gọi "));
+    if(area == "Quốc Tế"){
+        alert("Giá cước cuộc gọi là " + soPhut*2500);
+    }else if (area == "Trong Nước"){
+        alert("Giá cước cuộc gọi là " + soPhut*200);
+    }else {
+        alert("Sai cú pháp");
+    }
+</script>
+</html>

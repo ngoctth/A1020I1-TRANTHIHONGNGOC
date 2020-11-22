@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //Bài 1: Chuyển từ độ C sang độ F.
+    // let doCe = parseInt(prompt(" Hãy nhập độ C bạn muốn đổi"));
+    // let ketQua = (doCe*(9/5)+32);
+    // if (doCe = 10) {
+    //     alert("Độ F = " + ketQua);
+    // }
+
+
+
+    // Bài 2: Chuyển từ mét sang feet:
+    // let m = parseInt(prompt("Nhập mét"));
+    // let ft = m*parseFloat(3.2808);
+    // if (m = 30) {
+    //     alert("= " + ft + " ft");
+    // }
+
+    //Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+    // let a = prompt("Nhập cạnh a ");
+    // switch (a) {
+    //     case "3":
+    //     case "4":
+    //         alert("Diện tích hình vuông = " + a*a );
+    // }
+
+    //Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.
+    // let a = prompt("Nhập cạnh a ");
+    // let b = prompt("Nhập cạnh b ");
+    // if (a == 3 && b == 4){
+    //     alert(" Diện tích hình chữ nhật = " + a*b);
+    // }
+
+    // Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+
+    // let a = prompt("Nhập cạnh a ");
+    // let b = prompt("Nhập cạnh b ");
+    // if (a == 5 && b==6){
+    //     alert("Diện tích tam giác vuông = " + (1/2)*a*b);
+    //
+    // }
+
+    //Bài 6: Giải phương trình bậc 1.
+    //ax + b = 0
+
+    // let a = parseInt(prompt("Nhập số a"));
+    // let b = parseInt(prompt("Nhập số b"));
+    // if (a == 0) {
+    //     if (b == 0) {
+    //         alert("Phường trình vô số nghiệm");
+    //     } else {
+    //         alert(" Phương trình vô nghiệm ");
+    //     }
+    // }
+    // else{
+    //     alert("Phương trình có nghiệm =" + (-b/a));
+    //     }
+
+ //Bài 7: Giải phương trình bậc 2. ax^2 + bx + c = 0
+    // delta = b^2-4ac
+    // delta < 0 => pt vô nghiệm, delta = 0 => nghiệm kép: x1 =x2 = -b/2a; delta > 0 => có 2 nghiệm x1=x2 = -b+-can delta/2a
+
+    // let a = parseInt(prompt("Nhập số a"));
+    // let b = parseInt(prompt("Nhập số b"));
+    // let c = parseInt(prompt("Nhập số c"));
+    // let delta = (b*b-(4*a*c));
+    // if (delta < 0){
+    //     alert("Phương trình vô nghiệm");
+    // } else if (delta > 0) {
+    //     alert("Phương trình có 2 nghiệm phân biệt x1 = " + ((-b + Math.sqrt(delta))/2*a) + "x2 =" + ((-b - Math.sqrt(delta))/2*a));
+    //
+    // } else {
+    //     alert("Phương trình có nghiệm kép x1 = x2 = " + (-b / 2 * a));
+    //
+    //
+    // }
+
+    // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+    // Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
+
+    let tuoi = prompt("Nhập tuổi ");
+    if (tuoi !== Number.NaN) {
+        if (tuoi < 120 && tuoi > 0) {
+            alert(tuoi + " tuổi. Đây có thể là tuổi của 1 người");
+        } else {
+            alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
+        }
+    }  else {
+            alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
+        }
+
+
+
+
+</script>
+</html>
