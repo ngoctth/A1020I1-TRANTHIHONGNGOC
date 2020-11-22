@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style> .width {
+    width: 40px; height: 30px;
+}
+</style>
+<body>
+<table border="1" style="margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: 50px">
+    <tr></tr>
+    <td colspan="4"> <input type="text"  width="150px" id="input" style="color: blue"/></td>
+    <tr></tr>
+    <td><input type="button" class="width" id="1" value="1" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="2" value="2" style="color: blue" onclick="input.value+=this.value"/> </td>
+    <td><input type="button" class="width" id="3" value="3" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="cong" value="+" style="color: blue" onclick="input.value+=this.value"/></td>
+    <tr></tr>
+    <td><input type="button" class="width"  id="4" value="4" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width"  id="5" value="5" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width"  id="6" value="6" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="tru" value="-" style="color: blue" onclick="input.value+=this.value"/></td>
+    <tr></tr>
+    <td><input type="button" class="width"  id="7" value="7" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="8" value="8" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="9" value="9" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="x" value="*" style="color: blue" onclick="input.value+=this.value"/></td>
+    <tr></tr>
+    <td><input type="button" class="width" id="c" value="C" style="color: blue" onclick="input.value=''"/></td>
+    <td><input type="button" class="width" id="0" value="0" style="color: blue" onclick="input.value+=this.value"/></td>
+    <td><input type="button" class="width" id="bang" value="=" style="color: blue" onclick="input.value= eval(input.value)"/></td>
+    <td><input type="button" class="width" id="chia" value="/" style="color: blue" onclick="input.value+=this.value"/></td>
+
+
+
+
+
+</table>
+
+</body>
+</html>
