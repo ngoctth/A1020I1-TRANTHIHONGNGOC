@@ -86,16 +86,17 @@
     // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
     // Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
 
-    // let tuoi = parseInt(prompt("Nhập tuổi "));
-    // if (tuoi !== Number.NaN) {
+    // let tuoi = prompt("Nhập tuổi ");
+    // if (!isNaN(tuoi) && parseInt(tuoi)==tuoi) {
     //     if (tuoi < 120 && tuoi > 0) {
     //         alert(tuoi + " tuổi. Đây có thể là tuổi của 1 người");
     //     } else {
     //         alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
     //     }
+    //
     // }  else {
-    //         alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
-    //     }
+    //     alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
+    // }
 
 
 //Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
@@ -157,8 +158,10 @@
 
     let tienVay = parseInt(prompt("Số tiền muốn vay: "));
     let soThang = parseInt(prompt("Thời gian vay: "));
-    let laiSuat = parseFloat(prompt("Lãi suất % :  "));
-    if( = )
+    let laiSuat = parseFloat(prompt("Lãi suất: "));
+    alert("Tiền phải trả cả gốc lẫn lãi " + Math.pow(tienVay*laiSuat,soThang) + " đồng");
+
+
 
 
 </script>
