@@ -86,18 +86,79 @@
     // Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
     // Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.
 
-    let tuoi = prompt("Nhập tuổi ");
-    if (tuoi !== Number.NaN) {
-        if (tuoi < 120 && tuoi > 0) {
-            alert(tuoi + " tuổi. Đây có thể là tuổi của 1 người");
-        } else {
-            alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
-        }
-    }  else {
-            alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
-        }
+    // let tuoi = parseInt(prompt("Nhập tuổi "));
+    // if (tuoi !== Number.NaN) {
+    //     if (tuoi < 120 && tuoi > 0) {
+    //         alert(tuoi + " tuổi. Đây có thể là tuổi của 1 người");
+    //     } else {
+    //         alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
+    //     }
+    // }  else {
+    //         alert(tuoi + " tuổi. Đây có lẽ không phải tuổi của 1 người")
+    //     }
 
 
+//Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một tam giác là:
+    //     a,b,c > 0
+    //     a + b > c
+    //     b + c > a
+    //     a + c > b
+
+     // let a = parseInt(prompt("Nhập cạnh a "));
+    // let b = parseInt(prompt("Nhập cạnh b "));
+    // let c = parseInt(prompt("Nhập cạnh c "));
+    // if ( a > 0 && b > 0 && c >0){
+    //     if ( (a + b) > c && (b+c) > a && (a+c) >b){
+    //             alert(" Cả a, b, c đều là cạnh của một tam giác");
+    //     } else {
+    //         alert(" Một trong ba cạnh a,b,c không phải là cạnh của một tam giác");
+    //     }
+    // } else {
+    //     alert(" Một trong ba cạnh a,b,c không phải là cạnh của một tam giác");
+    // }
+
+    //Bài 10: Viết chương trình tính giá điện.
+
+    // let a = parseInt(prompt("Nhập tổng điện năng tiêu thụ ( kWh) "));
+    // if ( a <= 50) {
+    //     alert("Bậc 1: Giá 1678(đồng/kWh). Thành tiền " + a * 1678 + " đồng");
+    // }else if (a <= 100){
+    //     alert(" Bậc 2: Giá 1734(đồng/ kWh). Thành tiền " + (((a-50)*1734)+(50*1678)) + " đồng");
+    // } else if (a <= 200) {
+    //     alert(" Bậc 3: Giá 2014(đồng/ kWh). Thành tiền " + (((a-100)*2014)+(50*1678)+(50*1734)) + " đồng");
+    // } else if (a <= 300) {
+    //     alert(" Bậc 4: Giá 2536(đồng/ kWh). Thành tiền " + (((a-200)*2536)+(50*1678)+(50*1734)+(100*2014)) + " đồng");
+    // }else if (a <= 400) {
+    //     alert(" Bậc 5: Giá 2834(đồng/ kWh). Thành tiền " + (((a-300)*2834)+(100*2536)+(50*1678)+(50*1734)-(100*2014)) + " đồng");
+    // } else{
+    //     alert("Bậc 5: Giá 2927(đồng/ kWh). Thành tiền " + (((a-400)*2927)+(100*2834)+(100*2536)+(50*1678)+(50*1734)+(100*2014)) + "đồng");
+    // }
+
+    // Bài 11: Viết chương trình tính thuế thu nhập cá nhân.
+
+    // let thuNhap = parseInt(prompt("Nhập tổng tiền thu nhập của bạn "));
+    // if (thuNhap <= 5000000){
+    //     alert("Số thuế phải nộp là : " + thuNhap*parseFloat(0.05) + " đồng");
+    // } else if (thuNhap <= 10000000){
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.1))-250000) + " đồng");
+    // } else if (thuNhap <= 18000000) {
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.15))-750000) + " đồng");
+    // } else if (thuNhap <= 32000000) {
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.2))-1650000) + " đồng");
+    // } else if (thuNhap <= 52000000) {
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.25))-3250000) + " đồng");
+    // } else if (thuNhap <= 80000000) {
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.3))-5850000) + " đồng");
+    // } else {
+    //     alert("Số thuế phải nộp là : " + ((thuNhap*parseFloat(0.35))-9850000) + " đồng");
+    // }
+
+    //Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+
+    let tienVay = parseInt(prompt("Số tiền muốn vay: "));
+    let soThang = parseInt(prompt("Thời gian vay: "));
+    let laiSuat = parseFloat(prompt("Lãi suất % :  "));
+    if( = )
 
 
 </script>
