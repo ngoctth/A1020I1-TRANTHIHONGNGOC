@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /* tạo background xung quanh nút */
+        .
+        switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            float:inside;
+        }
+        /* tạo nút bên ngoài */
+
+        .
+        slider
+        {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            background-color: darkgray;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        /* tạo nút trượt bên trong*/
+
+        .
+        slider
+        :before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        /*màu của nút*/
+        input
+        .
+        good:checked + .slider {
+            background-color: green;
+        }
+        input.fast:checked + .slider {
+            background-color: cornflowerblue;
+        }
+        input.cheap:checked + .slider {
+            background-color: red;
+        }
+        /* hiệu ứng trượt */
+        input
+        :
+        checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+        /* Bo tròn hình ngoài */
+
+        .
+        slider
+        .round {
+            border-radius: 34px;
+        }
+        /* Nút tròn phía trong*/
+
+        .
+        slider
+        .round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<p>GOOD
+    <label class="switch ">
+        <input type="checkbox" id="xanh" class="good">
+        <span class="slider round"></span>
+    </label>
+</p>
+<p>FAST
+    <label class="switch ">
+        <input type="checkbox" id="xDuong" class="fast">
+        <span class="slider round"></span>
+    </label>
+</p>
+<p>CHEAP
+    <label class="switch ">
+        <input type="checkbox" id="red" class="cheap">
+        <span class="slider round"></span>
+    </label>
+</p>
+</body>
+</html>

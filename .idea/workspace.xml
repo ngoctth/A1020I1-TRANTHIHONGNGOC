@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0db4501d-6a7c-4a74-b52d-b3f8766d00d0" name="Default Changelist" comment="" />
+    <list default="true" id="0db4501d-6a7c-4a74-b52d-b3f8766d00d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Biến, kiểu dữ liệu và toán tử/Bai-tap/Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Biến, kiểu dữ liệu và toán tử/Bai-tap/Ứng dụng máy tính.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Kiểm tra năm nhuận.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Luyện tập if else.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Luyện tập if...else...if.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/cấu trúc switch-case.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/toán tử ba ngôi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/Câu lệnh switch-case.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/Máy tính đơn giảnn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/chỉ số cân nặng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good-fast-cheap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Git&amp;HTML/Bai-tap/Tạo danh sách.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,6 +49,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604325731101</updated>
       <workItem from="1604325734293" duration="77000" />
+      <workItem from="1606151099995" duration="311000" />
+      <workItem from="1606222759960" duration="12000" />
     </task>
     <servers />
   </component>
