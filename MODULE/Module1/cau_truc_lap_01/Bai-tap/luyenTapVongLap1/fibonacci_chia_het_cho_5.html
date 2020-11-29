@@ -10,11 +10,13 @@
            let a=0
            let b=1;
            let c;
-           for(i=0;i<20;i++){
+           for(i=0;i<5;i++){
                c = a+b;
                a=b;
                b=c;
-               document.write(c + " , ")
+               if (c%5==0) {
+                   document.write(c)
+               }
            }
     </script>
 </body>

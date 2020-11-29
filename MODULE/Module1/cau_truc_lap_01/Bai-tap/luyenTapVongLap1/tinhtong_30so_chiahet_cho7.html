@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+            // Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
+
+            let i = 1;
+            let count = 0;
+            let tong = 0;
+
+            while (true) {
+                if (i % 7 === 0) {
+                    tong = tong +i;
+                    count++;
+                }
+
+                i++;
+
+                if (count === 30) {
+                    document.write(tong);
+                    break;
+                }
+            }
+
+
+
+    </script>
+</body>
+</html>
