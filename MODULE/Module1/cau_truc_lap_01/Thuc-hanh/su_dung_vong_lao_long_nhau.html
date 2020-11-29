@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script language="JavaScript">
+    let draw,i,j;
+    draw = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+     i = j = 1;
+    while (i<=10){
+        draw = draw +"<tr>;";
+        while ( j<=10){
+            draw = draw +"<td>" + i*j + "</td>";
+            j++;
+
+        }
+        draw = draw +"</tr>;";
+        j=1;
+        i++;
+    }
+    draw = draw + "</table>";
+    document.write(draw);
+
+
+</script>
+</body>
+</html>

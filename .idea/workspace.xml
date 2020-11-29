@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0db4501d-6a7c-4a74-b52d-b3f8766d00d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Biến, kiểu dữ liệu và toán tử/Bai-tap/Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Biến, kiểu dữ liệu và toán tử/Bai-tap/Ứng dụng máy tính.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Kiểm tra năm nhuận.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Luyện tập if else.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/Luyện tập if...else...if.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/cấu trúc switch-case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 1/Thuc-hanh/toán tử ba ngôi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/Câu lệnh switch-case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/Máy tính đơn giảnn.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/chỉ số cân nặng.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good-fast-cheap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Git&amp;HTML/Bai-tap/Tạo danh sách.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good_fast_cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good_fast_cheap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +37,7 @@
       <workItem from="1604325734293" duration="77000" />
       <workItem from="1606151099995" duration="311000" />
       <workItem from="1606222759960" duration="12000" />
+      <workItem from="1606223056944" duration="167000" />
     </task>
     <servers />
   </component>
@@ -58,9 +45,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="431" y="127" key="FileChooserDialogImpl" timestamp="1604325767136">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="451" y="120" key="FileChooserDialogImpl" timestamp="1606223220644">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="431" y="127" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1604325767136" />
+    <state x="451" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606223220644" />
   </component>
 </project>

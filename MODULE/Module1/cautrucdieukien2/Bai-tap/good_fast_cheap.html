@@ -5,8 +5,7 @@
     <title>Title</title>
     <style type="text/css">
         /* tạo background xung quanh nút */
-        .
-        switch {
+        .switch {
             position: relative;
             display: inline-block;
             width: 60px;
@@ -15,8 +14,7 @@
         }
         /* tạo nút bên ngoài */
 
-        .
-        slider
+        .slider
         {
             position: absolute;
             cursor: pointer;
@@ -30,9 +28,7 @@
         }
         /* tạo nút trượt bên trong*/
 
-        .
-        slider
-        :before {
+        .slider:before {
             position: absolute;
             content: "";
             height: 26px;
@@ -44,9 +40,7 @@
             transition: .4s;
         }
         /*màu của nút*/
-        input
-        .
-        good:checked + .slider {
+        input.good:checked + .slider {
             background-color: green;
         }
         input.fast:checked + .slider {
@@ -56,25 +50,20 @@
             background-color: red;
         }
         /* hiệu ứng trượt */
-        input
-        :
-        checked + .slider:before {
+
+        input:checked + .slider:before {
             -webkit-transform: translateX(26px);
             -ms-transform: translateX(26px);
             transform: translateX(26px);
         }
         /* Bo tròn hình ngoài */
 
-        .
-        slider
-        .round {
+        .slider.round {
             border-radius: 34px;
         }
         /* Nút tròn phía trong*/
 
-        .
-        slider
-        .round:before {
+        .slider.round:before {
             border-radius: 50%;
         }
     </style>
@@ -82,21 +71,41 @@
 <body style="text-align: center">
 <p>GOOD
     <label class="switch ">
-        <input type="checkbox" id="xanh" class="good">
+        <input type="checkbox" id="xanh" onclick="check(yoi)" class="good">
         <span class="slider round"></span>
     </label>
 </p>
 <p>FAST
     <label class="switch ">
-        <input type="checkbox" id="xDuong" class="fast">
+        <input type="checkbox" id="xDuong" onclick="check(hayai)" class="fast">
         <span class="slider round"></span>
     </label>
 </p>
 <p>CHEAP
     <label class="switch ">
-        <input type="checkbox" id="red" class="cheap">
+        <input type="checkbox" id="red" onclick="check(yasui)" class="cheap">
         <span class="slider round"></span>
     </label>
 </p>
+
+<script>
+    function check(yoi;hayai;yasui) {
+        switch (yoi) {
+            case "true":
+
+        }
+
+
+
+
+
+
+    }
+
+
+    }
+</script>
+
+
 </body>
 </html>

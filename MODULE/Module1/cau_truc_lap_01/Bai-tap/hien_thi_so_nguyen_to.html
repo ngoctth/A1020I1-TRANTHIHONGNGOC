@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+<script>
+
+    let count = 0;
+    let n = 2;
+    while ( count < 20) {
+        let flag = true;
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                flag = false;
+                break;
+            }
+        }
+            if (flag) {
+                document.write(n + " , ");
+                count = count + 1;
+            }
+
+            n++;
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
