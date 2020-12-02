@@ -16,7 +16,7 @@ Bảng giá:
             <h1> Thông tin đăng ký</h1>
         </fieldset>
         <fieldset>
-            <label for ="uname" style="width: 100px"> Full Name: </label>
+            <label for ="uname"  style="width: 100px"> Full Name: </label>
                 <input type="text" id="uname" name="uname" placeholder=" Nguyễn Văn A">
             <label for ="cmnd"> Số CMND: </label>
                 <input type="text" id="cmnd" name="cmnd" placeholder=" 197XXXXXX ">
@@ -29,7 +29,7 @@ Bảng giá:
         </fieldset>
         <fieldset>
 
-            <label > Loại Customer: </label>
+            <label for="type" > Loại Customer: </label>
                 <input type="radio" style="width: 30px" id="type" name ="type" value="Diamond" checked >Diamond
                 <input type="radio" style="width: 30px" id="type" name ="type" value="Platinum" >Platinum
                 <input type="radio" style="width: 30px" id="type" name ="type" value="Gold" >Gold
@@ -37,14 +37,14 @@ Bảng giá:
                 <input type="radio" style="width: 30px" id="type" name ="type" value="Member" >Member
         </fieldset>
         <fieldset>
-            <label > Loại dịch vụ: </label>
-                <select name="loaiDv" >
-                    <option value="villa">Villa</option>
-                    <option value="house">House</option>
-                    <option value="room">Room</option>
+            <label for="loaiDv"> Loại dịch vụ: </label>
+                <select id="loaiDv" >
+                    <option value="500">Villa</option>
+                    <option value="300">House</option>
+                    <option value="100">Room</option>
                 </select>
-            <label> Loại phòng thuê: </label>
-                <select name="loaiPt">
+            <label for="loaiPt" > Loại phòng thuê: </label>
+                <select id="loaiPt">
                     <option value="vip">VIP</option>
                     <option value="busi">Business</option>
                     <option value="norm">Normal</option>
@@ -52,19 +52,48 @@ Bảng giá:
             <label for ="cusTomer"> Tổng số khách: </label>
                 <input type="text" id="cusTomer" name="cusTomer">
             <label for ="renDays"> Số ngày ở: </label>
-                <input type="renDays" id="renDays" name="renDays">
+                <input type="text" id="renDays" name="renDays">
             <label for ="disCount"> Giảm giá (%): </label>
-                <input type="disCount" id="disCount" name="disCount">
-
+                <input type="text" id="disCount" name="disCount">
         </fieldset>
     </form>
+    <input type="button" id="xacnhan" value="Xác Nhận Thông Tin" onclick="xacN()"/>
+    <div id="ketqua">  </div>
+
+
 <!--<&#45;&#45;!Task  :-->
 <!--Hiển thị toàn bộ thông tin vừa nhập kèm theo giá sau khi đã được giảm giá-->
 <!--( Số tiền phải trả  = giá loại dịch vụ X số ngày X ( 1 – giảm giá/100 ) )-->
 <!--(gán giá trị trực tiếp cho giá loại dịch vụ từ bảng giá bên trên)-->
 <!--&ndash;&gt;-->
     <script>
-        function f() {
+
+
+        function xacN() {
+            let ten = document.getElementById("uname").value;
+            let cmind = document.getElementById("cmnd").value;
+            let snhat = document.getElementById("dayOfb").value;
+            let eml = document.getElementById("email").value;
+            let diachi = document.getElementById("addr").value;
+            let loaikhang = document.getElementById("type").value;
+            let loaidvu = document.getElementById("loaiDv").value;
+            let loaiPhong = document.getElementById("loaiPt").value;
+            let tongKhach = document.getElementById("cusTomer").value;
+            let songay = document.getElementById("renDays").value;
+            let giamGia = document.getElementById("disCount").value;
+            let total =loaidvu*songay*(1-giamGia/100);
+            document.getElementById(ketqua).innerHTML = ;
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         }

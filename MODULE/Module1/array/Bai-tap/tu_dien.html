@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Tiếng Anh</label>
+    <input type="text" id="engLish"/>
+    <label> Tiếng Việt</label>
+    <input type="text" id="tiengViet"/>
+    <input type="button" id="dIch" onclick="tran()" value="Dịch">
+
+    <script>
+        let ta = ["Hello", "Fine" , "Pretty", ];
+        let tv = ["Xin chào" , "Ổn", "Dễ Thương"];
+        function tran() {
+            let vlta = document.getElementById("engLish").value;
+            let vltv = document.getElementById("tiengViet").value;
+            let i=0;
+            let check = false;
+            if(vlta !== ""){
+                for( i= 0; i<ta.length;i++){
+                     if(vlta === ta[i]){
+                        check = true;
+                        break;
+                    }
+                }
+                 if(check){
+                    document.getElementById("tiengViet").value = tv[i];
+                }else {
+                    document.getElementById("tiengViet").value = "Không tìm thấy";
+                }
+            }else if (vltv !== ""){
+                for( i= 0; i<tv.length;i++){
+                    if(vltv === tv[i]){
+                        check = true;
+                        break;
+                    }
+                }
+                if(check){
+                    document.getElementById("engLish").value = ta[i];
+                }else {
+                    document.getElementById("engLish").value = "Không tìm thấy";
+                }
+
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
