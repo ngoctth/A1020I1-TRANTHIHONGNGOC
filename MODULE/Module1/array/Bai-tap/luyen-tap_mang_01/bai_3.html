@@ -8,6 +8,19 @@
     <script>
         //Bài 3- Viết chương trình khởi tạo mảng số nguyên.
         // Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+
+        let max=0;
+        let total = 0;
+        let a =[3,4,5,6,7,20,54,66,778,9922];
+        for( let i =0; i<a.length; i++){
+            if(a[i]>max){
+                max = a[i]
+            }
+        }console.log(max);
+
+        for(let i = 0; i<a.length;i++){
+            total = total + a[i]
+        } console.log("The average value of the elements in the array is " +( total/a.length))
     </script>
 </body>
 </html>

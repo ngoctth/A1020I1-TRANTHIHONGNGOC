@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+        // Chương trình tìm xem V có nằm trong mảng số nguyên không?
+        // Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+
+        let a= [1,5,7,8,-1,2,4,-5,100,434];
+        let i,v;
+        for(i=0;i<a.length;i++) {
+             v = parseInt(prompt("Enter the element you want to test"));
+            if (v === a[i]) {
+                alert("V is in the array");
+            } else {
+                alert("V is not in the array");
+
+            }
+        }
+    </script>
+</body>
+</html>
