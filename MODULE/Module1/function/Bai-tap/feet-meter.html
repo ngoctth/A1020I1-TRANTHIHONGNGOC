@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Feet</label>
+    <input type="number" id="feet" oninput="change()"/>
+    <label> Meters</label>
+    <input type="number" id="meter" oninput="change()"/>
+    <script>
+        function change() {
+            let feEt = document.getElementById("feet").value;
+            let metEr = document.getElementById("meter").value;
+            if(feEt !== ""){
+                document.getElementById("meter").value = feEt*parseFloat(0.305);
+            }else {
+                document.getElementById("feet").value = metEr*parseFloat(3.279);
+            }
+        }
+    </script>
+
+</body>
+</html>

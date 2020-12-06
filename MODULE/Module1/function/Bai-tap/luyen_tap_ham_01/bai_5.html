@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="ketQua"></div>
+    <script>
+
+        let a = ["Polaris,Aldebaran,Deneb,Vega,Altair,Dubhe,Regulus"];
+        let b = ["Ursa Minor,Tarurus,Cygnus,Lyra,Aquila,Ursa Major,Leo"];
+        let c = prompt("nhập chòm sao")
+        function myFunction() {
+            let check = true;
+            for (let i = 0; i < a.length; i++) {
+                if (c === a[i]) {
+                    check = true;
+                    return b[i];
+                } else {
+                    return "không tìm thấy"
+                }
+            }
+        }
+            alert(myFunction());
+// // let c = prompt("nhập chòm sao")
+//         function myFunction() {
+//             let check = true;
+//             for (let i = 0; i < a.length; i++) {
+//                 if (c === a[i]) {
+//                     check = true;
+//                 }
+//             }
+//             if (check) {
+//                 return b[i];
+//             } else {
+//                 return "không tìm thấy"
+//             }
+//         }
+//         alert(myFunction());
+
+    </script>
+</body>
+</html>
