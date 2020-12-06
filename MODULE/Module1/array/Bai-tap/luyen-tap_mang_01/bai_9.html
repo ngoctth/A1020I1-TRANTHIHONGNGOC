@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //Bài 9- Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+        // Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+        // Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.
+        let a = new Array(10);
+        let b = new Array(10);
+        let i;
+        for (i =0; i<a.length;i++) {
+            a[i] = prompt("Enter the elements of the A array");
+
+        }
+        for (i = 0;i<b.length;i++){
+            b[i]= prompt("Enter the elements of the B array");
+        }
+        let c = a.concat(b);
+        console.log("New array C = "+c);
+    </script>
+</body>
+</html>
