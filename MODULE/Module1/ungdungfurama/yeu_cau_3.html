@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Page Title</title>
 </head>
 <body>
-$END$
+
+<script>
+    let check =false;
+    let name = prompt("Full Name");
+    let dayofb = prompt("Day of birth");
+    do {
+        let cmnd = prompt("Identity card number");
+        if(!isNaN(cmnd)){
+            cmnd=Number.parseFloat(cmnd);
+        }if(!Number.isInteger(cmnd)) {
+            alert("Invalid ID number. Please try again.");
+            continue;}
+        if(cmnd<10000000 || cmnd >99999999){
+            alert("Invalid ID number. Please try again.");
+            continue;
+        }
+            check = true;
+
+    }while (!check)
+    check = false;
+    let adDr = prompt("Address");
+    let phoneNum = prompt("Phone Number");
+    let eMail;
+    do {
+        let countAt = 0;
+        let countDot = 0;
+        eMail = prompt("Email");
+        for (let i = 0; i < eMail.length; i++) {
+            if (eMail.charAt(i) === "@") {
+                countAt++;
+                for (let j = 0; j < eMail.length; j++) {
+                    if (eMail.charAt(j) === ".") {
+                        countDot++;
+                    }
+                }
+            }
+        }
+        if (countAt !== 1 || countDot < 1) {
+            alert("Invalid email. Please try again");
+        } else {
+            check = true;
+        }
+    }while (!check)
+    check =false;
+
+    let customerType = prompt("Customer Class:  o Diamond  o Platinum    o Gold   o Sliver   o Member");
+    let disCount = prompt("Discount(%)");
+    let cusTotal = prompt("Number of Guests");
+    let dayTotal = prompt("Number of days");
+    let serveType =  prompt("Type of service: o Villa:500$  o House:300$  o Room:100$");
+    let roomType = prompt("Kind of room:  o Vip   o Bussimess   o Normal ");
+    let valueserve = "";
+    if (serveType==="villa"){
+        valueserve = 500;}
+    else if(serveType === "house"){
+        valueserve = 300;
+    }else if(serveType==="room"){
+        valueserve = 100;
+    }
+    let total = valueserve*dayTotal*(1-disCount/100);
+    alert("Full Name: "+name+ "\n"+
+        " Day of birth: "+ dayofb+"\n"+
+        " Identity card number: "+cmnd +"\n"+
+        " Address: "+adDr+"\n"+
+        " Phone Number: "+ phoneNum+"\n"+
+        " Email: "+eMail+"\n"+
+        " Customer Class: "+customerType+"\n"+
+        " Discount: "+disCount+"%"+"\n"+
+        " Number of Guests: "+cusTotal+"\n"+
+        " Number of days: "+dayTotal+"\n"+
+        " Type of service: "+serveType+"\n"+
+        " Kind of room: "+roomType+"\n"+
+        " Total payments : "+total+"$");
+
+</script>
+
 </body>
 </html>

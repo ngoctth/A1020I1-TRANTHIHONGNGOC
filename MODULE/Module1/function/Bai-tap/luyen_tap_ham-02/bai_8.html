@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    function reverse(a){
+        a.reverse();
+        return a;
+    }
+    let a = new Array(5);
+    for(let i=0;i<a.length;i++){
+        a[i] = prompt("enter elements")
+    }
+    alert(reverse(a));
+</script>
 </body>
 </html>

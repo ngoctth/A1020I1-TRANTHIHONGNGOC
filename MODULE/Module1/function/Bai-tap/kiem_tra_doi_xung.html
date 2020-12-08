@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        function checkDoiXung() {
+             a = 0;
+            if(c!==null) {
+                b = c % 10;
+                a = a * 10 + b;
+            }
+            return a;
+
+            }
+        }
+
+        let a,b;
+        let c =prompt("Nhập chuỗi");
+        b= checkDoiXung();
+        if(c===b){
+            alert(" là chuỗi đối xứng");
+        }
+        else {
+            alert("Ko phải";)
+        }
+    </script>
 </body>
 </html>

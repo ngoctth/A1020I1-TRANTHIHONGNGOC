@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    function check(){
+        if(a<b){
+            if(a<c){
+                return a;
+            }else{
+                return c;
+            }
+        }
+        else if(b<c){
+            return b;
+        } else {
+            return c
+        }
+    }
+    let a = prompt("enter number a");
+    let b = prompt("enter number b");
+    let c = prompt("enter number c");
+    alert(check() + " is min");
+</script>
 </body>
 </html>
