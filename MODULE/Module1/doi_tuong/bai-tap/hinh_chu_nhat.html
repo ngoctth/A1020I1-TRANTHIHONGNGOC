@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="veHcn" style="color: brown; border: 1px solid black">HCN</canvas>
+    <script>
+
+        class hinhCnhat{
+            constructor(dai,rong) {
+                this.dai = dai;
+                this.rong = rong;
+            }
+                hcnArea() {
+                    return ("Diện tích hình chữ nhật là " + dai * rong);
+                }
+                hcnChuvi(){
+                return ("Chu vi hình chữ nhật là" + (dai+rong)*2)
+                }
+                canvass(){
+                    let canvas =document.getElementById("veHcn").getContext("2d");
+                    canvas.fillRect(2,2,dai,rong);
+                }
+        }
+        let dai = parseInt(prompt("Nhập chiều rộng"));
+        let rong = parseInt(prompt("nhập chiều dài"));
+        let hinhcn = new hinhCnhat(dai,rong);
+        alert(hinhcn.hcnArea());
+        alert(hinhcn.hcnChuvi());
+        hinhcn.canvass();
+
+
+    </script>
+</body>
+</html>
