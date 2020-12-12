@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class SwitchButton{
+            constructor(status,lamp) {
+                this.status = status;
+                this.lamp = lamp;
+            }
+            connetToLamp(){
+                return this.status;
+            }
+            switchOff(){
+                this.status =true;
+            }
+            switchOn(){
+                this.status = false;
+            }
+        }
+        class ElectricLamp{
+            constructor(lampstatus) {
+                this.status = lampstatus;
+            }
+
+            lamp(){
+                if(this.status){
+                    alert("light on")
+                }else{
+                    alert("light off")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

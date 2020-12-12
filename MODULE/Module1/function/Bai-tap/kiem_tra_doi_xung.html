@@ -6,26 +6,23 @@
 </head>
 <body>
     <script>
-        function checkDoiXung() {
-             a = 0;
-            if(c!==null) {
-                b = c % 10;
-                a = a * 10 + b;
+        let a = [];
+        a = prompt("enter the string you want to check");
+        let b = a.split("");
+        let c = b.reverse();
+        let check = false;
+        // ;
+        for(let i = 0; i<b.length;i++) {
+            if (b[i] === c[i]) {
+                check = true;
             }
-            return a;
-
-            }
+        }
+        if(check){
+            alert("this string is symmetrical");
+        }else{
+            alert("this string isn't symmetrical ");
         }
 
-        let a,b;
-        let c =prompt("Nhập chuỗi");
-        b= checkDoiXung();
-        if(c===b){
-            alert(" là chuỗi đối xứng");
-        }
-        else {
-            alert("Ko phải";)
-        }
     </script>
 </body>
 </html>

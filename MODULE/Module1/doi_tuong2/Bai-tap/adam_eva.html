@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Apple{
+            constructor(weight) {
+                this.weight = weight;
+
+            }
+        }
+
+        class Human {
+            constructor(name,gender,weight) {
+                this.name = name;
+                this.gender = gender;
+                this.weight = weight;
+            }
+            talk(){
+                console.log("My name is " +this.name + " i'm " +this.gender);
+            }
+
+            eatApple(apple){
+                if(apple.weight>0){
+                    this.weight += apple.weight;
+                    console.log("current weight " + this.weight);
+                }
+            }
+        }
+    let adam = new Human("Adam","male",60);
+    let apple = new Apple(1);
+    adam.talk();
+    adam.eatApple(apple);
+    </script>
+</body>
+</html>

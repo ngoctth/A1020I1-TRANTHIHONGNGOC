@@ -8,7 +8,20 @@
 <script>
     let check =false;
     let name = prompt("Full Name");
-    let dayofb = prompt("Day of birth");
+    do {
+        let dayofb = prompt("Day of birth");
+        for(let i=0; i<dayofb.length;i++){
+            if(dayofb.charAt(2)==="/" && dayofb.charAt(5)==="/"){
+                let day = dayofb.substring(0,2);
+                let month = dayofb.substring(3,5);
+                let year = dayofb.substring(6,10);
+                if(!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
+                    check = false;
+                }
+            }
+        }
+    }while (!check)
+
     do {
         let cmnd = prompt("Identity card number");
         if(!isNaN(cmnd)){

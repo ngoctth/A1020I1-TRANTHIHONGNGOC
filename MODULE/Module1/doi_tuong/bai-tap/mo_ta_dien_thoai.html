@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+    <script>
+        class DienThoai{
+            constructor(pin,draft,newmes,send) {
+                this.pin = pin;
+                this.draft = draft;
+                this.newmes = newmes;
+                this.send = send;
+            }
+            checkStatus(){
+                if(pin >0){
+                    console.log("Dien thoai dang bat");
+                }else{
+                    console.log("Dien thoai da tat")
+                }
+            }
+        }
+    </script>
 </body>
 </html>

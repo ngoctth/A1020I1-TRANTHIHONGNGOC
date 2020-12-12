@@ -89,21 +89,25 @@
 </p>
 
 <script>
-    function check(yoi;hayai;yasui) {
+    function check(yoi,hayai,yasui) {
+        this.yoi =  yoi;
+        this.hayai = hayai;
+        this.yasui = yasui;
         switch (yoi) {
-            case "true":
-
+            case true :
+                hayai =false;
+                yasui = false;
+                break;
+            case false:
+                hayai =true;
+                yasui = false;
+                break;
+            default:
+                hayai = false;
+                yasui =true;
         }
-
-
-
-
-
-
     }
-
-
-    }
+    check();
 </script>
 
 

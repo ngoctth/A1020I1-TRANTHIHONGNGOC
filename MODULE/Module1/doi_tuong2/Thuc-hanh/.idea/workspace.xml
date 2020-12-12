@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b52ad5fe-1920-4c41-a931-990bdc6a4861" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/den_pin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/.idea/Bai-tap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/CV.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Bai-tap/tao_danh_sach.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/.idea/Thuc-hanh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/HyperText Markup Languge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git&amp;HTML/Thuc-hanh/wf-hello" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cautrucdieukien2/Bai-tap/good_fast_cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../cautrucdieukien2/Bai-tap/good_fast_cheap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cautrucdieukien2/Bai-tap/tss_te.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../doi_tuong/bai-tap/mo_ta_dien_thoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../doi_tuong/bai-tap/mo_ta_dien_thoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../function/Bai-tap/kiem_tra_doi_xung.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../function/Bai-tap/kiem_tra_doi_xung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ungdungfurama/yeu_cau_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ungdungfurama/yeu_cau_3.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1lYqGzsmIRmTHicn6mxSvc9AdxR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bai-tap" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b52ad5fe-1920-4c41-a931-990bdc6a4861" name="Default Changelist" comment="" />
+      <created>1607784280140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607784280140</updated>
+      <workItem from="1607784281398" duration="2823000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1607787137611">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607787137611" />
+  </component>
+</project>
