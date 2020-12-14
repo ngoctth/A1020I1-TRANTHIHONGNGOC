@@ -19,21 +19,37 @@
                 this.gender = gender;
                 this.weight = weight;
             }
-            talk(){
-                console.log("My name is " +this.name + " i'm " +this.gender);
+            talk(message){
+                console.log(message);
             }
 
             eatApple(apple){
                 if(apple.weight>0){
                     this.weight += apple.weight;
-                    console.log("current weight " + this.weight);
+                    console.log("cân nặng tăng lên " + this.weight + "kg ròi");
                 }
             }
+            showInfor(){
+                console.log("Name: "+ this.name+"\n"+
+                "Gender: "+ this.gender+"Weight: "+ this.weight)
+            }
         }
+
+
+
     let adam = new Human("Adam","male",60);
+        adam.showInfor();
+    let eva =new Human("Eva","male",50)
+        eva.showInfor();
     let apple = new Apple(1);
-    adam.talk();
-    adam.eatApple(apple);
+    adam.talk("Chào em");
+    adam.talk("Tôi là : "+ adam.name);
+    eva.talk("Chào Adam, em là " +eva.name);
+    adam.talk("Em ăn gì chưa ? Muốn ăn táo hong ?");
+    eva.talk("Đâu cho em 1 miếng");
+    eva.talk("Quả táo này tầm " +apple.weight + " kg nhỉ")
+    eva.eatApple(apple);
+    // adam.eatApple(apple);
     </script>
 </body>
 </html>

@@ -8,9 +8,9 @@
 <p id="ketQua"></p>
 <script>
     // tạo mảng 2 chiều
-    let array = new Array(12);
+    let array = new Array(10);
     for (let i = 0; i < 12; i++) {
-        array[i] = new Array(12)
+        array[i] = new Array(10)
         for (let j = 0; j < 12; j++) {
             array[i][j] = ""
         }
@@ -20,11 +20,11 @@
     hienThi();
     // hàm hiện thị bảng và giá trị của array;
     function hienThi() {
-        let tableString = '<table border="1">';
+        let tableString = '<table border="1" style="color: blue">';
         for (let i = 0; i < 10; i++) {
             tableString += ' <tr>';
             for (let j = 0; j < 10; j++) {
-                tableString += '<td width="25px" height="25px" onclick="choi(' + i + ',' + j + ')">' + array[i][j] + '</td>'
+                tableString += '<td width="30px" height="30px" onclick="choi(' + i + ',' + j + ')">' + array[i][j] + '</td>'
             }
             tableString += '</tr>';
         }
@@ -62,23 +62,23 @@
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
                 if (array[i][j]==="X"){ // nếu giá trị tìm thấy là X thì đi kiểm tra các ô bên cạnh
-                    if (array[i][j+1]==="X"&&array[i][j+2]==="X"){ // Kiểm tra đường ngang
+                    if (array[i][j+1]==="X"&&array[i][j+4]==="X"){ // Kiểm tra đường ngang
                         return true;
-                    }else if (array[i+1][j]==="X"&&array[i+2][j]==="X"){ // Kiểm tra đường dọc
+                    }else if (array[i+1][j]==="X"&&array[i+4][j]==="X"){ // Kiểm tra đường dọc
                         return true;
-                    }else if (array[i+1][j+1]==="X"&&array[i+2][j+2]==="X"){ // Kiểm tra đường chéo
+                    }else if (array[i+1][j+1]==="X"&&array[i+4][j+2]==="X"){ // Kiểm tra đường chéo
                         return true;
-                    }else if (array[i+1][j-1]==="X"&&array[i+2][j-2]==="X"){ // Kiểm tra đường chéo
+                    }else if (array[i+1][j-1]==="X"&&array[i+4][j-2]==="X"){ // Kiểm tra đường chéo
                         return true;
                     }
                 }else if(array[i][j]==="O"){ // Nếu giá trị tìm thấy là O thì đi kiểm tra các giá trị bên cạnh
-                    if (array[i][j+1]==="O"&&array[i][j+2]==="O"){
+                    if (array[i][j+1]==="O"&&array[i][j+4]==="O"){
                         return true;
-                    }else if (array[i+1][j]==="O"&&array[i+2][j]==="O"){
+                    }else if (array[i+1][j]==="O"&&array[i+4][j]==="O"){
                         return true;
-                    }else if (array[i+1][j+1]==="O"&&array[i+2][j+2]==="O"){
+                    }else if (array[i+1][j+1]==="O"&&array[i+4][j+4]==="O"){
                         return true;
-                    }else if (array[i+1][j-1]==="O"&&array[i+2][j-2]==="O"){
+                    }else if (array[i+1][j-1]==="O"&&array[i+4][j-4]==="O"){
                         return true;
                     }
                 }
