@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Remote{
+        constructor(tivi) {
+            this.tivi =tivi;
+        }
+        tvOnOffRm(){
+            this.tivi.onOffTv();
+        }
+        volumeUpRm(){
+            this.tivi.volumeUp();
+        }
+        volumeDownRm(){
+            this.tivi.volumeDown()
+
+        }
+        changeRm(channel){
+            this.tivi.changeChannelTV(channel)
+        }
+    }
+    class Tivi{
+        constructor() {
+            this.tvstatus = false;
+            this.channel = 0;
+            this.volumeTv = 0;
+        }
+        getChannel(){
+            return this.channel;
+        }
+        getVolume(){
+            return this.volumeTv;
+        }
+        getTvStatus(){
+            return this.tvstatus;
+        }
+        onOffTv(){
+            this.tvstatus =! this.tvstatus
+        }
+
+        volumeUp(){
+            if(this.tvstatus){
+                this.volumeTv++;
+            }
+
+        }
+        volumeDown() {
+            if (this.tvstatus) {
+                this.volumeTv--;
+            }
+        }
+        changeChannelTV(channel){
+            this.channel = channel;
+        }
+
+    }
+    let tivi = new Tivi();
+    let remote = new Remote(tivi);
+    alert(tivi.getTvStatus());
+    remote.tvOnOffRm();
+    alert(tivi.getTvStatus());
+    alert("Âm lượng hiện tại " +tivi.getVolume()+ " Kênh hiện tại " +tivi.getChannel());
+    tivi.changeChannelTV(7);
+    alert("Âm lượng hiện tại " +tivi.getVolume()+ " Kênh hiện tại " +tivi.getChannel());
+    remote.changeRm(3)
+    alert("Âm lượng hiện tại " +tivi.getVolume()+ " Kênh hiện tại " +tivi.getChannel());
+    remote.volumeUpRm()
+    remote.volumeUpRm()
+    alert("Âm lượng hiện tại " +tivi.getVolume()+ " Kênh hiện tại " +tivi.getChannel());
+    remote.tvOnOffRm();
+    alert(tivi.getTvStatus());
+
+
+
+</script>
+</body>
+</html>
