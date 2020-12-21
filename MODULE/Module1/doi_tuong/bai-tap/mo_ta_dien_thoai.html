@@ -6,21 +6,65 @@
 </head>
 <body>
     <script>
-        class DienThoai{
-            constructor(pin,draft,newmes,send) {
-                this.pin = pin;
-                this.draft = draft;
-                this.newmes = newmes;
-                this.send = send;
+        class Phone{
+            constructor() {
+                this.pin = 13;
+                this.draft = [];
+                this.newmes = [];
+                this.send = [];
+                this.status =true;
             }
             checkStatus(){
-                if(pin >0){
-                    console.log("Dien thoai dang bat");
-                }else{
-                    console.log("Dien thoai da tat")
+                return this.status;
+            }
+            onOffPhone(){
+                this.status =! this.status;
+            }
+            chage(){
+                    this.pin =100;
+            }
+            texting(message){
+                if(this.status){
+                    if(this.pin>10){
+                        this.draft.push(message);
+                        console.log(this.draft);
+                        this.pin--;
+                    }else{
+                        alert("Pin yếu");
+                        // this.chage();
+                    }
                 }
             }
+            inbox(message){
+                this.send.push(message);
+                this.pin--
+            }
+            sent(phone,message){
+                this.texting(message)
+                this.newmes = this.draft;
+                phone.inbox(this.newmes)
+                this.pin--
+            }
+            showSent(){
+                alert(this.newmes);
+                this.pin--
+            }
+            showInbox(){
+
+                alert(this.send);
+                this.pin--
+            }
         }
+        let nokia = new Phone();
+        let iphone = new Phone();
+        nokia.sent(iphone,"Hello");
+        nokia.showSent();
+        nokia.chage();
+        iphone.showInbox();//11
+        // iphone.chage();
+        iphone.sent(nokia,"Hi, I'm Nokia");
+        nokia.showInbox();
+
     </script>
 </body>
 </html>

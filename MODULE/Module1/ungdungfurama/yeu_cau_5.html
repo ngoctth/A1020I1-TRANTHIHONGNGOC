@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arrListCustomer = [];
+        displayMainMenu();
+        function displayMainMenu() {
+            let displayMain = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Customer" + "\n" +
+                "2. Display Information Customer." + "\n" +
+                "3.Edit Information Customer." + "\n" + "4.Delete Customer." + "\n" + "5.Exit."));
+            switch (displayMain) {
+                case 1: {
+                    addNewCustomer();
+                    break;
+                }
+
+                case 2: {
+                    displayCustomers();
+                    break;
+                }
+
+                case 3: {
+                    editCustomer();
+                    break;
+                }
+                case 4: {
+                    deleteCustomer();
+                    break;
+                }
+                case 5: {
+
+                }
+                    break;
+
+                default: {
+                    alert("Failed");
+                }
+
+            }
+
+            function addNewCustomer() {
+                let cusInfor = [];
+                let name = prompt("Full Name");
+                let dayofb = prompt("Day of birth");
+                let cmnd = prompt("Identity card number");
+                let adDr = prompt("Address");
+                let phoneNum = prompt("Phone Number");
+                let eMail = prompt("Email");
+                let customerType = prompt("Customer Class:  Diamond  ● Platinum  ● Gold   ● Sliver    ● Member");
+                let disCount = prompt("Discount(%)");
+                let cusTotal = prompt("Number of Guests");
+                let dayTotal = prompt("Number of days");
+                let serveType = prompt("Type of service:   ●Villa:500$    ●House:300$     ●Room:100$");
+                let roomType = prompt("Kind of room:   ● Vip   ● Bussiness  ● Normal ");
+                // let valueserve = "";
+                // if (serveType==="villa"){
+                //     valueserve = 500;}
+                // else if(serveType === "house"){
+                //     valueserve = 300;
+                // }else if(serveType==="room"){
+                //     valueserve = 100;
+                // }
+
+                cusInfor.push(name);
+                cusInfor.push(dayofb);
+                cusInfor.push(cmnd);
+                cusInfor.push(adDr);
+                cusInfor.push(phoneNum);
+                cusInfor.push(eMail);
+                cusInfor.push(customerType);
+                cusInfor.push(disCount);
+                cusInfor.push(cusTotal);
+                cusInfor.push(dayTotal);
+                cusInfor.push(serveType);
+                cusInfor.push(roomType);
+                arrListCustomer.push(cusInfor);
+                alert("Compete");
+                displayMainMenu();
+            }
+
+            function displayCustomers() {
+                let result = "";
+                for (let i = 0; i < arrListCustomer.length; i++) {
+                    result += i + "Name: " + arrListCustomer[i][0] + "\n";
+                    let chooseDisplay = prompt(prompt(result));
+                    alert("1.Full Name: " + arrListCustomer[chooseDisplay][0] + "\n" +
+                        " 2.Day of birth: " + arrListCustomer[chooseDisplay][1] + "\n" +
+                        " 3.Identity card number: " + arrListCustomer[chooseDisplay][2] + "\n" +
+                        " 4.Address: " + arrListCustomer[chooseDisplay][3] + "\n" +
+                        " 5.Phone Number: " + arrListCustomer[chooseDisplay][4] + "\n" +
+                        " 6.Email: " + arrListCustomer[chooseDisplay][5] + "\n" +
+                        " 7.Customer Class: " + arrListCustomer[chooseDisplay][6] + "\n" +
+                        " 8.Discount: " + arrListCustomer[chooseDisplay][7] + "%" + "\n" +
+                        " 9.Number of Guests: " + arrListCustomer[chooseDisplay][8] + "\n" +
+                        " 10.Number of days: " + arrListCustomer[chooseDisplay][9] + "\n" +
+                        " 11.Type of service: " + arrListCustomer[chooseDisplay][10] + "\n" +
+                        " 12.Kind of room: " + arrListCustomer[chooseDisplay][11] + "\n");
+                }
+                displayMainMenu();
+            }
+
+            function editCustomer() {
+                let result = "";
+                for (let i = 0; i < arrListCustomer.length; i++) {
+                    result += i + "Name: " + arrListCustomer[i][0] + "\n";
+                    let chooseDisplay = prompt(prompt(result));
+                    let editchoose = parseInt(prompt("1.Full Name: " + arrListCustomer[chooseDisplay][0] + "\n" +
+                        " 2.Day of birth: " + arrListCustomer[chooseDisplay][1] + "\n" +
+                        " 3.Identity card number: " + arrListCustomer[chooseDisplay][2] + "\n" +
+                        " 4.Address: " + arrListCustomer[chooseDisplay][3] + "\n" +
+                        " 5.Phone Number: " + arrListCustomer[chooseDisplay][4] + "\n" +
+                        " 6.Email: " + arrListCustomer[chooseDisplay][5] + "\n" +
+                        " 7.Customer Class: " + arrListCustomer[chooseDisplay][6] + "\n" +
+                        " 8.Discount: " + arrListCustomer[chooseDisplay][7] + "%" + "\n" +
+                        " 9.Number of Guests: " + arrListCustomer[chooseDisplay][8] + "\n" +
+                        " 10.Number of days: " + arrListCustomer[chooseDisplay][9] + "\n" +
+                        " 11.Type of service: " + arrListCustomer[chooseDisplay][10] + "\n" +
+                        " 12.Kind of room: " + arrListCustomer[chooseDisplay][11] + "\n"));
+                    switch (editchoose) {
+                        case 1: {
+                            arrListCustomer[chooseDisplay][0] = prompt("Edit name");
+                            break;
+                        }
+                        case 2: {
+                            arrListCustomer[chooseDisplay][1] = prompt("Edit Day of birth");
+                            break;
+                        }
+                        case 3: {
+                            arrListCustomer[chooseDisplay][2] = prompt("Edit Identity card number");
+                            break;
+                        }
+                        case 4: {
+                            arrListCustomer[chooseDisplay][3] = prompt("Edit Address");
+                            break;
+                        }
+                        case 5: {
+                            arrListCustomer[chooseDisplay][4] = prompt("Edit Phone Number");
+                            break;
+                        }
+                        case 6: {
+                            arrListCustomer[chooseDisplay][5] = prompt("Edit Customer Class");
+                            break;
+                        }
+                        case 7: {
+                            arrListCustomer[chooseDisplay][6] = prompt("Edit Email");
+                            break;
+                        }
+                        case 8: {
+                            arrListCustomer[chooseDisplay][7] = prompt("Edit Discount");
+                            break;
+                        }
+                        case 9: {
+                            arrListCustomer[chooseDisplay][8] = prompt("Edit Number of Guests");
+                            break;
+                        }
+                        case 10: {
+                            arrListCustomer[chooseDisplay][9] = prompt("Edit Number of days");
+                            break;
+                        }
+                        case 11: {
+                            arrListCustomer[chooseDisplay][10] = prompt("Edit Type of service");
+                            break;
+                        }
+                        case 12: {
+                            arrListCustomer[chooseDisplay][11] = prompt("Kind of room");
+                            break;
+                        }
+                        default: {
+                            alert("Failed");
+                        }
+                    }
+                    editCustomer();
+                }
+            }
+
+            function deleteCustomer() {
+                let result = "";
+                for (let i = 0; i < arrListCustomer.length; i++) {
+                    result += i + "Name: " + arrListCustomer[i][0] + "\n";
+                    let chooseDelete = prompt(prompt(result));
+                    let check = parseInt(prompt("Are you sure you want to delete?"));
+                    if (check === "yes") {
+                        arrListCustomer.splice(chooseDelete, 1);
+                        alert("Compele");
+                    } else {
+                        alert("Cancel");
+                    }
+                    displayMainMenu();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

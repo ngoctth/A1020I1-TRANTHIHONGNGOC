@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arrNameCustomer = [];
+        while (true) {
+            let choose = parseInt(prompt("Please choose service." + "\n" + "1. Add customer name" + "\n" + "2. Delete customer name"));
+            switch (choose) {
+                case 1: {
+                    let numberCus = parseInt(prompt("Enter the number of customer you want to add"));
+                    for (let i = 0; i < numberCus; i++) {
+                        let name = prompt("Enter the customer name");
+                        arrNameCustomer.push(name);
+                    }
+                    let result = "";
+                    arrNameCustomer.sort();
+                    for (let i = 0; i < arrNameCustomer.length; i++) {
+                        result += (i+1)+"."+  arrNameCustomer[i]+"\n"
+                    }
+                    alert(result);
+                    break;
+                }
+
+                case 2: {
+                    let check = false;
+                    let nameCustomer = prompt("Enter the customer you want to delete");
+                    for (let i = 0; i < arrNameCustomer.length; i++) {
+                        if (arrNameCustomer[i] === nameCustomer) {
+                            arrNameCustomer.splice(i,1);
+                            check =true;
+                        }
+                    }
+                    if(!check){
+                        alert("The name customer you want to delete isn't in the list")
+                    }
+                    let result = "";
+                    arrNameCustomer.sort();
+                    for (let i = 0; i < arrNameCustomer.length; i++) {
+                        result += (i+1)+"."+  arrNameCustomer[i]+"\n"
+                    }
+                    alert(result);
+                    break;
+                }
+                default:
+                    alert("Failed");
+            }
+        }
+    </script>
+
+</body>
+</html>

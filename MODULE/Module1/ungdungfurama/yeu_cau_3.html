@@ -16,11 +16,21 @@
                 let month = dayofb.substring(3,5);
                 let year = dayofb.substring(6,10);
                 if(!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
-                    check = false;
+                    day = Number.parseFloat(day);
+                    month = Number.parseFloat(month);
+                    year = Number.parseFloat(year);
+                    if(Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year)){
+                        if(day<32&& month<13&&year >1950){
+                            check=true;
+                        }
+                    }
                 }
             }
-        }
+        }if(!check){
+            alert("Invalid date of birth");
+            }
     }while (!check)
+    check = false;
 
     do {
         let cmnd = prompt("Identity card number");
@@ -64,8 +74,34 @@
 
     let customerType = prompt("Customer Class:  o Diamond  o Platinum    o Gold   o Sliver   o Member");
     let disCount = prompt("Discount(%)");
-    let cusTotal = prompt("Number of Guests");
-    let dayTotal = prompt("Number of days");
+    do {
+        let cusTotal = prompt("Number of Guests");
+            if (!isNaN(cusTotal)) {
+                cusTotal = Number.parseFloat(cusTotal)
+                if (Number.isInteger(cusTotal)&&cusTotal >0) {
+                        check = true;
+                    }
+                }
+        if(!check){
+            alert("the number of guests must be greater than 0")
+        }
+
+    }while (!check)
+    check =false;
+    do {
+        let dayTotal = prompt("Number of days for rent");;
+        if (!isNaN(dayTotal)) {
+            dayTotal = Number.parseFloat(dayTotal)
+            if (Number.isInteger(dayTotal)&&dayTotal >0) {
+                check = true;
+            }
+        }
+        if(!check){
+            alert("Number of days for rent must be greater than 0")
+        }
+
+    }while (!check)
+    check =false;
     let serveType =  prompt("Type of service: o Villa:500$  o House:300$  o Room:100$");
     let roomType = prompt("Kind of room:  o Vip   o Bussimess   o Normal ");
     let valueserve = "";

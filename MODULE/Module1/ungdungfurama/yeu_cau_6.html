@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        displayMainMenu();
+        function displayMainMenu(){
+            let displayMain = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Customer" + "\n" +
+                "2. Display Information Customer." +"\n" +
+                "3.Edit Information Customer." +"\n" + "4.Delete Customer."+"\n"+"5. Display total pays"  +"\n" +"6.Exit."));
+            switch (displayMain) {
+                case 1:{
+                    addNewCustomer();
+                    break;
+                }
+
+                case 2:{
+                    displayCustomers();
+                    break;
+                }
+
+                case 3: {
+                    editCustomer();
+                    break;
+                }
+                case 4: {
+                    deleteCustomer();
+                    break;
+                }
+                case 5: {
+                    totalPay()
+
+                    break;
+            }
+        default: {
+                alert("Failed");
+            }
+        }
+        }
+
+
+        function  addNewCustomer() {
+                let custom = new Customer();
+                let name = prompt("Full Name");
+                let dayofb = prompt("Day of birth");
+                let cmnd = prompt("Identity card number");
+                let adDr = prompt("Address");
+                let phoneNum = prompt("Phone Number");
+                let eMail = prompt("Email");
+                let customerType = prompt("Customer Class:  Diamond  ● Platinum  ● Gold   ● Sliver    ● Member");
+                let disCount = prompt("Discount(%)");
+                let cusTotal = prompt("Number of Guests");
+                let dayTotal = prompt("Number of days");
+                let serveType =  prompt("Type of service:   ●Villa:500$    ●House:300$     ●Room:100$");
+                let roomType = prompt("Kind of room:   ● Vip   ● Bussiness  ● Normal ");
+                custom.getName(name);
+                custom.getDayofb(dayofb);
+                custom.getCmnd(cmnd);
+                custom.getAdd(adDr);
+                custom.getPhoneNum(phoneNum);
+                custom.getEmail(eMail);
+                custom.getCustomerType(customerType);
+                custom.getDisCount(disCount);
+                custom.getCusTotal(cusTotal);
+                custom.getDayTotal(dayTotal);
+                custom.getServeType(serveType);
+                custom.getRoomType(roomType);
+
+        }
+
+        class Customer {
+            constructor(name,dayofb,cmnd,adDr,phoneNum,eMail,customerType,disCount,cusTotal,dayTotal,serveType,roomType,total) {
+                this.name = name;
+                this.dayofb = dayofb;
+                this.cmnd = cmnd;
+                this.adDr =adDr;
+                this.phoneNum =phoneNum;
+                this.eMail = eMail;
+                this.customerType = customerType;
+                this.disCount = disCount;
+                this.cusTotal = cusTotal;
+                this.dayTotal = dayTotal;
+                this.serveType = serveType;
+                this.roomType = roomType;
+                this.total =total;
+
+            }
+            getName(){
+                return this.name;
+            }
+            getDayofb(){
+                return this.dayofb;
+            }
+            getCmnd(){
+                return this.cmnd;
+            }
+            getAdd(){
+                return this.adDr;
+            }
+            getPhoneNum(){
+                return this.phoneNum;
+            }getEmail(){
+                return this.eMail;
+            }
+            getCustomerType(){
+                return this.customerType;
+            }
+            getDisCount(){
+                return this.disCount;
+            }
+            getCusTotal(){
+                return this.cusTotal;
+            }
+            getDayTotal(){
+                return this.dayTotal;
+            }
+            getServeType(){
+                return this.serveType;
+            }
+            getRoomType(){
+                return this.roomType;
+            }
+
+            totalPay(){
+                let money = 0;
+                if(this.serveType ==="villa"){
+                    money = 500;
+                }
+                if(this.serveType==="house"){
+                    money = 300;
+                }
+                if(this.serveType==="room"){
+                    money = 100;
+                }
+            return  this.dayTotal*money*(1-this.disCount*100);
+            }
+        }
+    </script>
+</body>
+</html>
