@@ -141,103 +141,19 @@
         }
     }
 
-
-    class Employee {
-        constructor(nameE, dayofbE, cmndE, addrE, phoneE, emailE,employtypeE) {
-            this.nameE = nameE;
-            this.dayofbE = dayofbE;
-            this.cmndE = cmndE;
-            this.addrE = addrE;
-            this.phoneE = phoneE;
-            this.emailE = emailE;
-            this.employtypeE = employtypeE;
-
-        }
-        // setNameE(nameE){
-        //     this.nameE = nameE;
-        //
-        // }
-        // setDayofbE(dayofbE){
-        //     this.dayofbE = dayofbE;
-        //
-        // }
-        //
-        // setCmndE(cmndE){
-        //     this.cmndE = cmndE;
-        //
-        // }
-        // setAddE(addrE){
-        //     this.addrE = addrE;
-        //
-        // }
-        // setPhoneE(phoneE){
-        //     this.phoneE = phoneE;
-        //
-        // }
-        // setEmailE(emailE){
-        //     this.emailE = emailE;
-        //
-        // }
-        // setEmployTypeE(employtypeE){
-        //     this.employtype = employtype;
-        // }
-
-
-        getNameE() {
-            return this.nameE;
-        }
-
-        getDayofbE() {
-            return this.dayofbE;
-        }
-
-        getCmndE() {
-            return this.cmndE;
-        }
-
-        getAddE() {
-            return this.addrE;
-        }
-
-        getPhoneE() {
-            return this.phoneE;
-        }
-
-        getEmailE() {
-            return this.emailE;
-        }
-        getEmploytypeE(){
-            return this.employtypeE;
-        }
-
-
-        salary() {
-            let subsidize = 0;
-            switch (this.employtypeE()) {
-                case "manager":
-                    subsidize = 500;
-                    break;
-                case "sale":
-                    subsidize = 300;
-                    break;
-                case "marketing":
-                    subsidize = 200;
-            }
-            return subsidize;
-        }
-    }
-
     function mainMenu() {
-        let mainmenu = parseInt(prompt("1.Customer         2.Employee"));
-        switch(mainmenu){
-            case 1:
-                displayMainMenu();
-            break;
-            case 2:
-                displayMainMenuE();
-            break;
-            default:
-                alert("Failed");
+        while (true) {
+            let mainmenu = parseInt(prompt("1.Customer         2.Employee"));
+            switch (mainmenu) {
+                case 1:
+                    displayMainMenu();
+                    break;
+                case 2:
+                    displayMainMenuE();
+                    break;
+                default:
+                    alert("Failed");
+            }
         }
     }
 
@@ -277,37 +193,6 @@
             }
         }
     }
-
-
-    function displayMainMenuE() {
-        let displayMainE = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Employee" + "\n" +
-            "2.Display information Employees." + "\n" +
-            "3.Salary of Employees."  + "\n" + "4.Exit."));
-        switch (displayMainE) {
-            case 1: {
-                addNewEmployee();
-                break;
-            }
-
-            case 2: {
-                displayEmployee();
-                break;
-            }
-
-            case 3: {
-                salaryOfEmploy();
-                break;
-            }
-            case 4:{
-                mainMenu();
-                break;
-            }
-            default: {
-                alert("Failed");
-            }
-        }
-    }
-
 
     function addNewCustomer() {
         let check = false;
@@ -370,62 +255,6 @@
     }
 
 
-    function addNewEmployee() {
-        let check = false;
-        let regexCmnd = /^[\d]{8,8}$/;
-        let regexEmail = /\S+@\S+\.\S+/;
-        let regexBirthday = /^\d{2}[./-]\d{2}[./-]\d{4}$/;
-        let regexPhone = /^[\d]{10,12}$/;
-        let nameE = prompt("Full Name");
-        let dayofbE = "";
-        do {
-            dayofbE = prompt("Day of birth");
-            if (regexBirthday.test(dayofbE)) {
-                check = true;
-            } else {
-                alert("Failed. Please try again ");
-            }
-        } while (!check);
-        let cmndE = "";
-        check =false;
-        do {
-            cmndE = prompt("Identity card number");
-            if (regexCmnd.test(cmndE)) {
-                check = true;
-            } else {
-                alert("Failed. Please try again ");
-            }
-        } while (!check);
-        let addrE = prompt("Address");
-        let phoneE = "";
-        check=false;
-        do {
-            phoneE = prompt("Phone Number");
-            if (regexPhone.test(phoneE)) {
-                check = true;
-            } else {
-                alert("Failed. Please try again ");
-            }
-        } while (!check);
-
-        let emailE = "" ;
-        check =false;
-        do {
-            emailE=prompt("Email");
-            if (regexEmail.test(emailE)) {
-                check = true;
-            } else {
-                alert("Failed. Please try again ");
-            }
-        } while (!check);
-        let employtypeE = prompt("Employee Type:  ● Manager  ● Sale   ● Marketing");
-        alert("Compete");
-        let employee = new Employee(nameE, dayofbE, cmndE, addrE, phoneE, emailE, employtypeE);
-        listEmployee.push(employee);
-        displayMainMenuE();
-    }
-
-
     function displayCustomers() {
         let result = "";
         let saveName = prompt("Enter the name of customer you want to display");
@@ -452,28 +281,6 @@
         displayMainMenu();
     }
 
-    function displayEmployee() {
-        let result = "";
-        let saveName = prompt("Enter the name of employee you want to display");
-        for(let i=0; i<listEmployee.length;i++){
-            if(saveName ===listEmployee[i].getNameE()){
-                result += "1.Full Name: " + listEmployee[i].getNameE() + "\n"
-                    + "2.Day of birth:"+ listEmployee[i].getDayofbE() + "\n"
-                    +"3.Identity card number: "+ listEmployee[i].getCmndE() + "\n"
-                    +"4.Address: "+ listEmployee[i].getAddE() + "\n"
-                    +"5.Phone Number: "+ listEmployee[i].getPhoneE() + "\n"
-                    +"6.Email: "+ listEmployee[i].getEmailE() + "\n"
-                    +"7.Employee Type: "+ listEmployee[i].getEmploytypeE() + "\n";
-                alert(result) ;
-                break;
-            }else {
-                alert("The name entered doesn't exist")
-            }
-        }
-        displayMainMenuE();
-    }
-
-
     function  totalPays() {
         let result = "";
         let saveN = prompt("Enter the name you want to display total pays");
@@ -488,22 +295,6 @@
         }
         displayMainMenu();
     }
-
-    function salaryOfEmploy() {
-        let result = "";
-        let saveName = prompt("Enter the name of employee you want to display salary");
-        for(let i=0; i<listEmployee.length;i++){
-            if(saveName ===listEmployee[i].getNameE()){
-                result += "Name: " + listEmployee[i].getNameE() + "\n" +"Salary: " + listEmployee[i].salary() +"$";
-                alert(result);
-                break;
-            }else {
-                alert("The name entered doesn't exist");
-            }
-        }
-        displayMainMenuE();
-    }
-
 
     function editCustomer(){
         let result = "";
@@ -594,9 +385,210 @@
             }
         }
     }
+    class Employee {
+        constructor(nameE, dayofbE, cmndE, addrE, phoneE, emailE,employtypeE) {
+            this.nameE = nameE;
+            this.dayofbE = dayofbE;
+            this.cmndE = cmndE;
+            this.addrE = addrE;
+            this.phoneE = phoneE;
+            this.emailE = emailE;
+            this.employtypeE = employtypeE;
+
+        }
+        // setNameE(nameE){
+        //     this.nameE = nameE;
+        //
+        // }
+        // setDayofbE(dayofbE){
+        //     this.dayofbE = dayofbE;
+        //
+        // }
+        //
+        // setCmndE(cmndE){
+        //     this.cmndE = cmndE;
+        //
+        // }
+        // setAddE(addrE){
+        //     this.addrE = addrE;
+        //
+        // }
+        // setPhoneE(phoneE){
+        //     this.phoneE = phoneE;
+        //
+        // }
+        // setEmailE(emailE){
+        //     this.emailE = emailE;
+        //
+        // }
+        // setEmployTypeE(employtypeE){
+        //     this.employtype = employtype;
+        // }
 
 
+        getNameE() {
+            return this.nameE;
+        }
 
+        getDayofbE() {
+            return this.dayofbE;
+        }
+
+        getCmndE() {
+            return this.cmndE;
+        }
+
+        getAddE() {
+            return this.addrE;
+        }
+
+        getPhoneE() {
+            return this.phoneE;
+        }
+
+        getEmailE() {
+            return this.emailE;
+        }
+        getEmploytypeE(){
+            return this.employtypeE;
+        }
+
+
+        salary() {
+            let subsidize = 0;
+            switch (this.employtypeE()) {
+                case "manager":
+                    subsidize = 500;
+                    break;
+                case "sale":
+                    subsidize = 300;
+                    break;
+                case "marketing":
+                    subsidize = 200;
+            }
+            return subsidize;
+        }
+    }
+
+    function displayMainMenuE() {
+        let displayMainE = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Employee" + "\n" +
+            "2.Display information Employees." + "\n" +
+            "3.Salary of Employees."  + "\n" + "4.Exit."));
+        switch (displayMainE) {
+            case 1: {
+                addNewEmployee();
+                break;
+            }
+
+            case 2: {
+                displayEmployee();
+                break;
+            }
+
+            case 3: {
+                salaryOfEmploy();
+                break;
+            }
+            case 4:{
+                mainMenu();
+                break;
+            }
+            default: {
+                alert("Failed");
+            }
+        }
+    }
+
+    function addNewEmployee() {
+        let check = false;
+        let regexCmnd = /^[\d]{8,8}$/;
+        let regexEmail = /\S+@\S+\.\S+/;
+        let regexBirthday = /^\d{2}[./-]\d{2}[./-]\d{4}$/;
+        let regexPhone = /^[\d]{10,12}$/;
+        let nameE = prompt("Full Name");
+        let dayofbE = "";
+        do {
+            dayofbE = prompt("Day of birth");
+            if (regexBirthday.test(dayofbE)) {
+                check = true;
+            } else {
+                alert("Failed. Please try again ");
+            }
+        } while (!check);
+        let cmndE = "";
+        check =false;
+        do {
+            cmndE = prompt("Identity card number");
+            if (regexCmnd.test(cmndE)) {
+                check = true;
+            } else {
+                alert("Failed. Please try again ");
+            }
+        } while (!check);
+        let addrE = prompt("Address");
+        let phoneE = "";
+        check=false;
+        do {
+            phoneE = prompt("Phone Number");
+            if (regexPhone.test(phoneE)) {
+                check = true;
+            } else {
+                alert("Failed. Please try again ");
+            }
+        } while (!check);
+
+        let emailE = "" ;
+        check =false;
+        do {
+            emailE=prompt("Email");
+            if (regexEmail.test(emailE)) {
+                check = true;
+            } else {
+                alert("Failed. Please try again ");
+            }
+        } while (!check);
+        let employtypeE = prompt("Employee Type:  ● Manager  ● Sale   ● Marketing");
+        alert("Compete");
+        let employee = new Employee(nameE, dayofbE, cmndE, addrE, phoneE, emailE, employtypeE);
+        listEmployee.push(employee);
+        displayMainMenuE();
+    }
+
+    function displayEmployee() {
+        let result = "";
+        let saveName = prompt("Enter the name of employee you want to display");
+        for(let i=0; i<listEmployee.length;i++){
+            if(saveName ===listEmployee[i].getNameE()){
+                result += "1.Full Name: " + listEmployee[i].getNameE() + "\n"
+                    + "2.Day of birth:"+ listEmployee[i].getDayofbE() + "\n"
+                    +"3.Identity card number: "+ listEmployee[i].getCmndE() + "\n"
+                    +"4.Address: "+ listEmployee[i].getAddE() + "\n"
+                    +"5.Phone Number: "+ listEmployee[i].getPhoneE() + "\n"
+                    +"6.Email: "+ listEmployee[i].getEmailE() + "\n"
+                    +"7.Employee Type: "+ listEmployee[i].getEmploytypeE() + "\n";
+                alert(result) ;
+                break;
+            }else {
+                alert("The name entered doesn't exist")
+            }
+        }
+        displayMainMenuE();
+    }
+
+    function salaryOfEmploy() {
+        let result = "";
+        let saveName = prompt("Enter the name of employee you want to display salary");
+        for(let i=0; i<listEmployee.length;i++){
+            if(saveName ===listEmployee[i].getNameE()){
+                result += "Name: " + listEmployee[i].getNameE() + "\n" +"Salary: " + listEmployee[i].salary() +"$";
+                alert(result);
+                break;
+            }else {
+                alert("The name entered doesn't exist");
+            }
+        }
+        displayMainMenuE();
+    }
 
 
 
