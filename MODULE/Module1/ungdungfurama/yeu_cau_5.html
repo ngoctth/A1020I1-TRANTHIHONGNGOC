@@ -86,7 +86,7 @@
                 let result = "";
                 for (let i = 0; i < arrListCustomer.length; i++) {
                     result += i + "Name: " + arrListCustomer[i][0] + "\n";
-                    let chooseDisplay = prompt(prompt(result));
+                    let chooseDisplay = parseInt(prompt(result));
                     alert("1.Full Name: " + arrListCustomer[chooseDisplay][0] + "\n" +
                         " 2.Day of birth: " + arrListCustomer[chooseDisplay][1] + "\n" +
                         " 3.Identity card number: " + arrListCustomer[chooseDisplay][2] + "\n" +
@@ -107,7 +107,7 @@
                 let result = "";
                 for (let i = 0; i < arrListCustomer.length; i++) {
                     result += i + "Name: " + arrListCustomer[i][0] + "\n";
-                    let chooseDisplay = prompt(prompt(result));
+                    let chooseDisplay = parseInt(prompt(result));
                     let editchoose = parseInt(prompt("1.Full Name: " + arrListCustomer[chooseDisplay][0] + "\n" +
                         " 2.Day of birth: " + arrListCustomer[chooseDisplay][1] + "\n" +
                         " 3.Identity card number: " + arrListCustomer[chooseDisplay][2] + "\n" +
