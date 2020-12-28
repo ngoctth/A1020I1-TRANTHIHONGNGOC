@@ -7,7 +7,7 @@
 <body>
 
     <script>
-        //1 write rect
+        //1 write rect by *
         // for(let i = 0; i<6;i++){
         //     for(let j =0; j<=4;j++){
         //         document.write("*")
@@ -27,6 +27,27 @@
         //     sum = sum +1/i;
         // }
         // alert(sum);
+
+
+        //4 S=15-1+1/2-1/3!+....+(-1)n  1/n!
+        // while (true) {
+        //     let n = prompt("enter number")
+        //     let s = 0;
+        //     for (let i = 1; i <= n; i++) {
+        //         s = s + 1 / i;
+        //     }
+        //     alert(15 + s);
+        // }
+
+        //5 S=1+1/3!+1/5!+…..+1/(2n-1)!
+        // while (true) {
+        //     let n = prompt("enter number");
+        //     let s = 0;
+        //     for (let i = 1; i <= n; i += 2) {
+        //         s = s + 1 / i;
+        //     }
+        //     alert(s);
+        // }
 
 
         //6 n!!
@@ -54,23 +75,58 @@
 
 
         //8 UCLN BCNN
-        let a = parseInt(prompt("enter number a"));
-        let b = parseInt(prompt("enter number b"));
-        function ucln() {
-        while (a !=b){
-            if(a>b){
-                a-=b
-            }else{
-                b-=a;
+        // let a = parseInt(prompt("enter number a"));
+        // let b = parseInt(prompt("enter number b"));
+        // function ucln() {
+        // while (a !=b){
+        //     if(a>b){
+        //         a-=b
+        //     }else{
+        //         b-=a;
+        //     }
+        // }
+        //
+        // return a;
+        // }
+        //
+        //
+        //
+        // alert("ucln is " + ucln(a,b) +"\n" + "bcnn is " + ((a*b)/ucln(a,b)));
+
+        //9 output arr
+        // let a = new Array(5);
+        // for(let i=0;i<a.length;i++){
+        //     a[i] = prompt("enter value");
+        // }
+        // let b = a.reverse();
+        // console.log(b);
+        // let c;
+        // for(let i = 0;i<b.length;i++){
+        //     c = b[i].toUpperCase();
+        //     console.log(c);
+        // }
+        // let d;
+        // for(let i = 0;i<b.length;i++){
+        //     d = b[i].toLowerCase();
+        //     console.log(d);
+        // }
+
+        let arr = [];
+        arr = prompt("enter string");
+
+        for (let i=0; i<arr.length;i++){
+            arr.charCodeAt(arr[i]);
+            if(66<arr[i]<90){
+                arr[i].toLowerCase();
+            }
+            if(97<arr[i]<122){
+                arr[i].toUpperCase();
             }
         }
-
-        return a;
-        }
+        console.log(arr);
 
 
 
-        alert("ucln is " + ucln(a,b) +"\n" + "bcnn is " + ((a*b)/ucln(a,b)));
     </script>
 
 </body>
