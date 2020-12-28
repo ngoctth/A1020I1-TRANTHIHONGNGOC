@@ -6,10 +6,9 @@
 </head>
 <body>
 <script>
+
     let listCustomer = [];
     let listEmployee = [];
-
-    mainMenu();
     class Customer {
         constructor(name, dayofb, cmnd, addr, phoneNum, email, customerType, disCount, cusTotal, dayTotal, serveType, roomType) {
             this.name = name;
@@ -141,6 +140,92 @@
         }
     }
 
+    class Employee {
+        constructor(nameE, dayofbE, cmndE, addrE, phoneE, emailE,employtypeE) {
+            this.nameE = nameE;
+            this.dayofbE = dayofbE;
+            this.cmndE = cmndE;
+            this.addrE = addrE;
+            this.phoneE = phoneE;
+            this.emailE = emailE;
+            this.employtypeE = employtypeE;
+
+        }
+        // setNameE(nameE){
+        //     this.nameE = nameE;
+        //
+        // }
+        // setDayofbE(dayofbE){
+        //     this.dayofbE = dayofbE;
+        //
+        // }
+        //
+        // setCmndE(cmndE){
+        //     this.cmndE = cmndE;
+        //
+        // }
+        // setAddE(addrE){
+        //     this.addrE = addrE;
+        //
+        // }
+        // setPhoneE(phoneE){
+        //     this.phoneE = phoneE;
+        //
+        // }
+        // setEmailE(emailE){
+        //     this.emailE = emailE;
+        //
+        // }
+        // setEmployTypeE(employtypeE){
+        //     this.employtype = employtype;
+        // }
+
+
+        getNameE() {
+            return this.nameE;
+        }
+
+        getDayofbE() {
+            return this.dayofbE;
+        }
+
+        getCmndE() {
+            return this.cmndE;
+        }
+
+        getAddE() {
+            return this.addrE;
+        }
+
+        getPhoneE() {
+            return this.phoneE;
+        }
+
+        getEmailE() {
+            return this.emailE;
+        }
+        getEmploytypeE(){
+            return this.employtypeE;
+        }
+
+
+        salary() {
+            let subsidize = 0;
+            switch (this.employtypeE) {
+                case "manager":
+                    subsidize = 500;
+                    break;
+                case "sale":
+                    subsidize = 300;
+                    break;
+                case "marketing":
+                    subsidize = 200;
+            }
+            return subsidize;
+        }
+    }
+    mainMenu();
+
     function mainMenu() {
         while (true) {
             let mainmenu = parseInt(prompt("1.Customer         2.Employee"));
@@ -156,7 +241,6 @@
             }
         }
     }
-
     function displayMainMenu() {
         let displayMain = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Customer" + "\n" +
             "2. Display Information Customer." + "\n" +
@@ -193,7 +277,6 @@
             }
         }
     }
-
     function addNewCustomer() {
         let check = false;
         let regexCmnd = /^[\d]{8,8}$/;
@@ -253,8 +336,6 @@
         listCustomer.push(custom);
         displayMainMenu();
     }
-
-
     function displayCustomers() {
         let result = "";
         let saveName = prompt("Enter the name of customer you want to display");
@@ -280,7 +361,6 @@
         }
         displayMainMenu();
     }
-
     function  totalPays() {
         let result = "";
         let saveN = prompt("Enter the name you want to display total pays");
@@ -295,7 +375,6 @@
         }
         displayMainMenu();
     }
-
     function editCustomer(){
         let result = "";
         let saveNa = prompt("Enter the name you want to edit");
@@ -372,7 +451,6 @@
         }
         displayMainMenu();
     }
-
     function deleteCustomer() {
         let saveNam = prompt("Enter name of customer you want to delete");
         for(let i=0; i<listCustomer.length;i++){
@@ -385,90 +463,8 @@
             }
         }
     }
-    class Employee {
-        constructor(nameE, dayofbE, cmndE, addrE, phoneE, emailE,employtypeE) {
-            this.nameE = nameE;
-            this.dayofbE = dayofbE;
-            this.cmndE = cmndE;
-            this.addrE = addrE;
-            this.phoneE = phoneE;
-            this.emailE = emailE;
-            this.employtypeE = employtypeE;
-
-        }
-        // setNameE(nameE){
-        //     this.nameE = nameE;
-        //
-        // }
-        // setDayofbE(dayofbE){
-        //     this.dayofbE = dayofbE;
-        //
-        // }
-        //
-        // setCmndE(cmndE){
-        //     this.cmndE = cmndE;
-        //
-        // }
-        // setAddE(addrE){
-        //     this.addrE = addrE;
-        //
-        // }
-        // setPhoneE(phoneE){
-        //     this.phoneE = phoneE;
-        //
-        // }
-        // setEmailE(emailE){
-        //     this.emailE = emailE;
-        //
-        // }
-        // setEmployTypeE(employtypeE){
-        //     this.employtype = employtype;
-        // }
 
 
-        getNameE() {
-            return this.nameE;
-        }
-
-        getDayofbE() {
-            return this.dayofbE;
-        }
-
-        getCmndE() {
-            return this.cmndE;
-        }
-
-        getAddE() {
-            return this.addrE;
-        }
-
-        getPhoneE() {
-            return this.phoneE;
-        }
-
-        getEmailE() {
-            return this.emailE;
-        }
-        getEmploytypeE(){
-            return this.employtypeE;
-        }
-
-
-        salary() {
-            let subsidize = 0;
-            switch (this.employtypeE()) {
-                case "manager":
-                    subsidize = 500;
-                    break;
-                case "sale":
-                    subsidize = 300;
-                    break;
-                case "marketing":
-                    subsidize = 200;
-            }
-            return subsidize;
-        }
-    }
 
     function displayMainMenuE() {
         let displayMainE = parseInt(prompt("Please choose what you want to do." + "\n" + "1. Add New Employee" + "\n" +
@@ -498,7 +494,6 @@
             }
         }
     }
-
     function addNewEmployee() {
         let check = false;
         let regexCmnd = /^[\d]{8,8}$/;
@@ -553,7 +548,6 @@
         listEmployee.push(employee);
         displayMainMenuE();
     }
-
     function displayEmployee() {
         let result = "";
         let saveName = prompt("Enter the name of employee you want to display");
@@ -574,7 +568,6 @@
         }
         displayMainMenuE();
     }
-
     function salaryOfEmploy() {
         let result = "";
         let saveName = prompt("Enter the name of employee you want to display salary");

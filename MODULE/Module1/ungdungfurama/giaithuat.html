@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        //1 write rect
+        // for(let i = 0; i<6;i++){
+        //     for(let j =0; j<=4;j++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        //2 enter and return month and year
+        // let a = prompt("enter month");
+        // let b = prompt("enter year")
+        // document.write("Month " + a + " year " + b );
+
+        //3 sum of 1/1+...+1/n
+        // let n = prompt("enter N");
+        // let sum = 0;
+        // for(let i =1;i<=n;i++){
+        //     sum = sum +1/i;
+        // }
+        // alert(sum);
+
+
+        //6 n!!
+        // let n = parseInt(prompt("enter number"));
+        // let value=1;
+        // while (n>0){
+        //     value = value*n;
+        //     n = n-2;
+        // }
+        // alert(value)
+
+
+        //7 S & P of arr
+        // let m =[];
+        // m = prompt("enter number");
+        // let sum = 0;
+        // let tich = 1;
+        // m.split("");
+        // for(let i=0;i<m.length;i++) {
+        //     sum += parseInt(m[i]);
+        //     tich *= m[i];
+        // }
+        // console.log(sum);
+        // console.log(tich);
+
+
+        //8 UCLN BCNN
+        let a = parseInt(prompt("enter number a"));
+        let b = parseInt(prompt("enter number b"));
+        function ucln() {
+        while (a !=b){
+            if(a>b){
+                a-=b
+            }else{
+                b-=a;
+            }
+        }
+
+        return a;
+        }
+
+
+
+        alert("ucln is " + ucln(a,b) +"\n" + "bcnn is " + ((a*b)/ucln(a,b)));
+    </script>
+
+</body>
+</html>

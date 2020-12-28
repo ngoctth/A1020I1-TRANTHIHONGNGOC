@@ -18,20 +18,22 @@
                 return ("Độ Kenvin =") + (doC+parseFloat(273.15));
             }
         }
-        let doC;
-        do {
-            doC = parseInt(prompt("Nhập độ C muốn đổi"));
-            // if(doC <-273){
-            //     alert("Giá trị nhỏ nhất -273 độ");
-            //
-            // }else {
-            //     check = true;
-            // }
-        }while (doC<-273);
 
-        let tem = new temperature(doC);
-        alert(tem.cTof());
-        alert(tem.cToken());
+            let doC;
+            do {
+                doC = parseInt(prompt("Nhập độ C muốn đổi"));
+                // if(doC <-273){
+                //     alert("Giá trị nhỏ nhất -273 độ");
+                //
+                // }else {
+                //     check = true;
+                // }
+            } while (doC < -273);
+
+            let tem = new temperature(doC);
+            alert(tem.cTof());
+            alert(tem.cToken());
+
     </script>
 </body>
 </html>
