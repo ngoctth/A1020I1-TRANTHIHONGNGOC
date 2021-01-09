@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai1
+    let boiChung = 0;
+    let arr = new Array(5);
+    for(let i=0;i<arr.length;i++){
+        arr[i]= parseInt(prompt("Nhập số"));
+        if(arr[i]%3===0 && arr[i]%5===0){
+            boiChung += arr[i];
+        }
+    }
+    console.log("Các số đã nhập:" + arr);
+    console.log("Tổng của các số là bội chung của 3 và 5 là :"+ boiChung);
+
+
+</script>
+</body>
+</html>

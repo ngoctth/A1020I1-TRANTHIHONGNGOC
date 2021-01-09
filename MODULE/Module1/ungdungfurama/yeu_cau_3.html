@@ -1,132 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Page Title</title>
 </head>
 <body>
 
 <script>
-    let check =false;
-    let name = prompt("Full Name");
-    do {
-        let dayofb = prompt("Day of birth");
-        for(let i=0; i<dayofb.length;i++){
-            if(dayofb.charAt(2)==="/" && dayofb.charAt(5)==="/"){
-                let day = dayofb.substring(0,2);
-                let month = dayofb.substring(3,5);
-                let year = dayofb.substring(6,10);
-                if(!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
-                    day = Number.parseFloat(day);
-                    month = Number.parseFloat(month);
-                    year = Number.parseFloat(year);
-                    if(Number.isInteger(day)&&Number.isInteger(month)&&Number.isInteger(year)){
-                        if(day<32&& month<13&&year >1950){
-                            check=true;
+    while(true) {
+        let check = false;
+        let name = prompt("Full Name");
+        let dayofb = null;
+        do {
+            dayofb = prompt("Day of birth");
+            for (let i = 0; i < dayofb.length; i++) {
+                if (dayofb.charAt(2) === "/" && dayofb.charAt(5) === "/") {
+                    let day = dayofb.substring(0, 2);
+                    let month = dayofb.substring(3, 5);
+                    let year = dayofb.substring(6, 10);
+                    if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+                        day = Number.parseFloat(day);
+                        month = Number.parseFloat(month);
+                        year = Number.parseFloat(year);
+                        if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+                            if (day < 32 && month < 13 && year > 1950) {
+                                check = true;
+                            }
                         }
                     }
                 }
             }
-        }if(!check){
-            alert("Invalid date of birth");
+            if (!check) {
+                alert("Invalid date of birth");
             }
-    }while (!check)
-    check = false;
+        } while (!check);
+        let cmnd = null;
+        check = false;
 
-    do {
-        let cmnd = prompt("Identity card number");
-        if(!isNaN(cmnd)){
-            cmnd=Number.parseFloat(cmnd);
-        }if(!Number.isInteger(cmnd)) {
-            alert("Invalid ID number. Please try again.");
-            continue;}
-        if(cmnd<10000000 || cmnd >99999999){
-            alert("Invalid ID number. Please try again.");
-            continue;
-        }
+        do {
+            cmnd = prompt("Identity card number");
+            if (!isNaN(cmnd)) {
+                cmnd = Number.parseFloat(cmnd);
+            }
+            if (!Number.isInteger(cmnd)) {
+                alert("Invalid ID number. Please try again.");
+                continue;
+            }
+            if (cmnd < 100000000 || cmnd > 999999999) {
+                alert("Invalid ID number. Please try again.");
+                continue;
+            }
             check = true;
 
-    }while (!check)
-    check = false;
-    let adDr = prompt("Address");
-    let phoneNum = prompt("Phone Number");
-    let eMail;
-    do {
-        let countAt = 0;
-        let countDot = 0;
-        eMail = prompt("Email");
-        for (let i = 0; i < eMail.length; i++) {
-            if (eMail.charAt(i) === "@") {
-                countAt++;
-                for (let j = 0; j < eMail.length; j++) {
-                    if (eMail.charAt(j) === ".") {
-                        countDot++;
+        } while (!check);
+        check = false;
+        let adDr = prompt("Address");
+        let phoneNum = prompt("Phone Number");
+        let eMail;
+        do {
+            let countAt = 0;
+            let countDot = 0;
+            eMail = prompt("Email");
+            for (let i = 0; i < eMail.length; i++) {
+                if (eMail.charAt(i) === "@") {
+                    countAt++;
+                    for (let j = 0; j < eMail.length; j++) {
+                        if (eMail.charAt(j) === ".") {
+                            countDot++;
+                        }
                     }
                 }
             }
-        }
-        if (countAt !== 1 || countDot < 1) {
-            alert("Invalid email. Please try again");
-        } else {
-            check = true;
-        }
-    }while (!check)
-    check =false;
-
-    let customerType = prompt("Customer Class:  o Diamond  o Platinum    o Gold   o Sliver   o Member");
-    let disCount = prompt("Discount(%)");
-    do {
-        let cusTotal = prompt("Number of Guests");
-            if (!isNaN(cusTotal)) {
-                cusTotal = Number.parseFloat(cusTotal)
-                if (Number.isInteger(cusTotal)&&cusTotal >0) {
-                        check = true;
-                    }
-                }
-        if(!check){
-            alert("the number of guests must be greater than 0")
-        }
-
-    }while (!check)
-    check =false;
-    do {
-        let dayTotal = prompt("Number of days for rent");;
-        if (!isNaN(dayTotal)) {
-            dayTotal = Number.parseFloat(dayTotal)
-            if (Number.isInteger(dayTotal)&&dayTotal >0) {
+            if (countAt !== 1 || countDot < 1) {
+                alert("Invalid email. Please try again");
+            } else {
                 check = true;
             }
-        }
-        if(!check){
-            alert("Number of days for rent must be greater than 0")
-        }
+        } while (!check);
+        check = false;
 
-    }while (!check)
-    check =false;
-    let serveType =  prompt("Type of service: o Villa:500$  o House:300$  o Room:100$");
-    let roomType = prompt("Kind of room:  o Vip   o Bussimess   o Normal ");
-    let valueserve = "";
-    if (serveType==="villa"){
-        valueserve = 500;}
-    else if(serveType === "house"){
-        valueserve = 300;
-    }else if(serveType==="room"){
-        valueserve = 100;
+        let customerType = prompt("Customer Class:  o Diamond  o Platinum    o Gold   o Sliver   o Member");
+        let disCount = prompt("Discount(%)");
+        let cusTotal = null;
+        do {
+            cusTotal = prompt("Number of Guests");
+            if (!isNaN(cusTotal)) {
+                cusTotal = Number.parseFloat(cusTotal);
+                if (Number.isInteger(cusTotal) && cusTotal > 0) {
+                    check = true;
+                }
+            }
+            if (!check) {
+                alert("the number of guests must be greater than 0")
+            }
+
+        } while (!check);
+        let dayTotal = null;
+        check = true;
+        do {
+            dayTotal = parseInt(prompt("Number of days for rent"));
+            if (!isNaN(dayTotal) && dayTotal > 0) {
+                check = false;
+            }
+            if (check) {
+                alert("Number of days for rent must be greater than 0")
+            }
+
+        } while (check);
+        check = false;
+        let serveType = prompt("Type of service: o Villa:500$  o House:300$  o Room:100$");
+        let roomType = prompt("Kind of room:  o Vip   o Bussimess   o Normal ");
+        let valueserve = "";
+        if (serveType === "villa") {
+            valueserve = 500;
+        } else if (serveType === "house") {
+            valueserve = 300;
+        } else if (serveType === "room") {
+            valueserve = 100;
+        }
+        let total = valueserve * dayTotal * (1 - disCount / 100);
+        alert("Full Name: " + name + "\n" +
+            " Day of birth: " + dayofb + "\n" +
+            " Identity card number: " + cmnd + "\n" +
+            " Address: " + adDr + "\n" +
+            " Phone Number: " + phoneNum + "\n" +
+            " Email: " + eMail + "\n" +
+            " Customer Class: " + customerType + "\n" +
+            " Discount: " + disCount + "%" + "\n" +
+            " Number of Guests: " + cusTotal + "\n" +
+            " Number of days: " + dayTotal + "\n" +
+            " Type of service: " + serveType + "\n" +
+            " Kind of room: " + roomType + "\n" +
+            " Total payments : " + total + "$");
     }
-    let total = valueserve*dayTotal*(1-disCount/100);
-    alert("Full Name: "+name+ "\n"+
-        " Day of birth: "+ dayofb+"\n"+
-        " Identity card number: "+cmnd +"\n"+
-        " Address: "+adDr+"\n"+
-        " Phone Number: "+ phoneNum+"\n"+
-        " Email: "+eMail+"\n"+
-        " Customer Class: "+customerType+"\n"+
-        " Discount: "+disCount+"%"+"\n"+
-        " Number of Guests: "+cusTotal+"\n"+
-        " Number of days: "+dayTotal+"\n"+
-        " Type of service: "+serveType+"\n"+
-        " Kind of room: "+roomType+"\n"+
-        " Total payments : "+total+"$");
-
 </script>
 
 </body>

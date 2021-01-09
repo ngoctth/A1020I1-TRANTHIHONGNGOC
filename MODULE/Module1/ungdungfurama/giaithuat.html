@@ -74,24 +74,47 @@
         // console.log(tich);
 
 
-        //8 UCLN BCNN
+        // 8 UCLN BCNN
         // let a = parseInt(prompt("enter number a"));
         // let b = parseInt(prompt("enter number b"));
-        // function ucln() {
-        // while (a !=b){
-        //     if(a>b){
-        //         a-=b
-        //     }else{
-        //         b-=a;
+        // ucln(a,b);
+        // function ucln(a,b) {
+        //     let uclnhat = [];
+        //
+        //     if(a<b) {
+        //         for (let i = 1; i <=a ; i++) {
+        //             if (a % i === 0 && b % i === 0) {
+        //                 uclnhat.push(i);
+        //             }
+        //         }
+        //     }
+        //     else {
+        //         for (let i = 1; i <=b; i++) {
+        //             if (a % i === 0 && b % i === 0) {
+        //                 uclnhat.push(i);
+        //             }
+        //         }
+        //     }
+        //     let max = uclnhat[0];
+        //     for (let i = 0; i < uclnhat.length; i++) {
+        //         if (uclnhat[i] > max) {
+        //             max = uclnhat[i];
+        //         }
+        //     }
+        //     console.log("UCLN is " +max);
+        // }
+        // function bcnn(a,b) {
+        //     let i = 1;
+        //     while (true) {
+        //         if (i % a === 0 && i % b === 0) {
+        //             return i;
+        //         }
+        //         else{
+        //             i++;
+        //         }
         //     }
         // }
-        //
-        // return a;
-        // }
-        //
-        //
-        //
-        // alert("ucln is " + ucln(a,b) +"\n" + "bcnn is " + ((a*b)/ucln(a,b)));
+        // console.log("BCNN is" + bcnn(a,b));
 
         //9 output arr
         // let a = new Array(5);
@@ -111,19 +134,20 @@
         //     console.log(d);
         // }
 
-        let arr = [];
-        arr = prompt("enter string");
 
-        for (let i=0; i<arr.length;i++){
-            arr.charCodeAt(arr[i]);
-            if(66<arr[i]<90){
-                arr[i].toLowerCase();
+        let arr = prompt("enter string");
+        b = arr.split("");
+        let output="";
+        for (let i=0; i<b.length;i++){
+            if( b[i].charCodeAt(0)>=65   &&  b[i].charCodeAt(0)<=90) {
+                b[i] = b[i].toLowerCase();
             }
-            if(97<arr[i]<122){
-                arr[i].toUpperCase();
-            }
+            else if (b[i].charCodeAt(0) >= 97 && b[i].charCodeAt(0) <= 122) {
+                b[i] = b[i].toUpperCase();
+                }
+            output +=b[i];
         }
-        console.log(arr);
+        console.log(output);
 
 
 

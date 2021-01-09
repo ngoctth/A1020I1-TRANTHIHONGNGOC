@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0db4501d-6a7c-4a74-b52d-b3f8766d00d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good_fast_cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/MODULE/Module1/Cấu trúc điều kiện 2/Bai-tap/good_fast_cheap.html" afterDir="false" />
+    <list default="true" id="f382d39a-55f4-47c0-9392-342f4a629af8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/A1020I1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1jjmAWBZdCwGEDh058kLlAQK6ZL" />
+  <component name="ProjectId" id="1mHapHc2B6AbgWJ9r8mqPfaftrB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,22 +25,24 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MODULE/Module1/ungdungfurama" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0db4501d-6a7c-4a74-b52d-b3f8766d00d0" name="Default Changelist" comment="" />
-      <created>1604325731101</created>
+      <changelist id="f382d39a-55f4-47c0-9392-342f4a629af8" name="Default Changelist" comment="" />
+      <created>1609153151616</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604325731101</updated>
-      <workItem from="1604325734293" duration="77000" />
-      <workItem from="1606151099995" duration="311000" />
-      <workItem from="1606222759960" duration="12000" />
-      <workItem from="1606223056944" duration="167000" />
+      <updated>1609153151616</updated>
+      <workItem from="1609153157133" duration="54000" />
+      <workItem from="1609153231032" duration="56000" />
+      <workItem from="1609153316029" duration="66000" />
+      <workItem from="1609153422561" duration="6000" />
+      <workItem from="1609153451135" duration="29000" />
+      <workItem from="1609153521106" duration="16000" />
     </task>
     <servers />
   </component>
@@ -45,10 +50,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="120" key="FileChooserDialogImpl" timestamp="1606223220644">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1609153535535">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="431" y="127" key="FileChooserDialogImpl/0.0.1304.768@0.0.1304.768" timestamp="1604325767136" />
-    <state x="451" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606223220644" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1609153535535" />
   </component>
 </project>

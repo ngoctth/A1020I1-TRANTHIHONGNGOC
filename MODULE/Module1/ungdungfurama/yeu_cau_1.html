@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Page Title</title>
 </head>
 <body>
 
 <script>
-
-    let name = prompt("Full Name");
-    let dayofb = prompt("Day of birth");
-    let cmnd = prompt("Identity card number");
-    let adDr = prompt("Address");
-    let phoneNum = prompt("Phone Number");
-    let eMail = prompt("Email");
-    let customerType = prompt("Customer Class:  Diamond  ● Platinum  ● Gold   ● Sliver    ● Member");
-    let disCount = prompt("Discount(%)");
-    let cusTotal = prompt("Number of Guests");
-    let dayTotal = prompt("Number of days");
-    let serveType =  prompt("Type of service:   ●Villa:500$    ●House:300$     ●Room:100$");
-    let roomType = prompt("Kind of room:   ● Vip   ● Bussimess  ● Normal ");
-    let valueserve = "";
-    if (serveType==="villa"){
-        valueserve = 500;}
-    else if(serveType === "house"){
-        valueserve = 300;
-    }else if(serveType==="room"){
-        valueserve = 100;
+    while (true) {
+        let name = prompt("Full Name");
+        let dayofb = prompt("Day of birth");
+        let cmnd = prompt("Identity card number");
+        let adDr = prompt("Address");
+        let phoneNum = prompt("Phone Number");
+        let eMail = prompt("Email");
+        let customerType = prompt("Customer Class:  Diamond  ● Platinum  ● Gold   ● Sliver    ● Member");
+        let disCount = prompt("Discount(%)");
+        let cusTotal = prompt("Number of Guests");
+        let dayTotal = prompt("Number of days");
+        let serveType = prompt("Type of service:   ●Villa:500$    ●House:300$     ●Room:100$");
+        let roomType = prompt("Kind of room:   ● Vip   ● Bussimess  ● Normal ");
+        let valueserve = "";
+        if (serveType === "villa") {
+            valueserve = 500;
+        } else if (serveType === "house") {
+            valueserve = 300;
+        } else if (serveType === "room") {
+            valueserve = 100;
+        }
+        let total = valueserve * dayTotal * (1 - disCount / 100);
+        alert("Full Name: " + name + "\n" +
+            " Day of birth: " + dayofb + "\n" +
+            " Identity card number: " + cmnd + "\n" +
+            " Address: " + adDr + "\n" +
+            " Phone Number: " + phoneNum + "\n" +
+            " Email: " + eMail + "\n" +
+            " Customer Class: " + customerType + "\n" +
+            " Discount: " + disCount + "%" + "\n" +
+            " Number of Guests: " + cusTotal + "\n" +
+            " Number of days: " + dayTotal + "\n" +
+            " Type of service: " + serveType + "\n" +
+            " Kind of room: " + roomType + "\n" +
+            " Total payments : " + total + "$");
     }
-    let total = valueserve*dayTotal*(1-disCount/100);
-    alert("Full Name: "+name+ "\n"+
-        " Day of birth: "+ dayofb+"\n"+
-        " Identity card number: "+cmnd +"\n"+
-        " Address: "+adDr+"\n"+
-        " Phone Number: "+ phoneNum+"\n"+
-        " Email: "+eMail+"\n"+
-        " Customer Class: "+customerType+"\n"+
-        " Discount: "+disCount+"%"+"\n"+
-        " Number of Guests: "+cusTotal+"\n"+
-        " Number of days: "+dayTotal+"\n"+
-        " Type of service: "+serveType+"\n"+
-        " Kind of room: "+roomType+"\n"+
-        " Total payments : "+total+"$");
-
 </script>
 
 </body>

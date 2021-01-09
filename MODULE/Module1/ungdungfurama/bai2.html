@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function diemHS(point) {
+        let lamTron= point;
+        let flag = true;
+        do {
+            let point = prompt("Nhập điểm");
+
+            if(point>100||point<0){
+                flag = false;
+            }
+            if(point<50){
+                alert("Điểm dưới 50 ---> Trượt");
+            }
+            else if(point==50){
+                alert("Số điểm = :" +  point);
+            }
+            else if(point>50 && point%5===0){
+                alert("Số điểm = :"+  point);
+            }
+            else {
+                for(let i=1;i<3;i++){
+                    if((point +i)%5===0){
+                        lamTron = point + i;
+                    }
+                }
+                alert("Số điểm  = " + lamTron);
+            }
+
+        }while (!flag);
+
+    }
+    diemHS();
+
+
+</script>
+</body>
+</html>

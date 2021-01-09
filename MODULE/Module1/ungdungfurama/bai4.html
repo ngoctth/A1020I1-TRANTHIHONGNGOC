@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>WELCOME</h1>
+<input type="button" id="addNew" value="Add New Customer" onclick="addNewCustomer()">
+<script>
+    class Customer {
+        constructor(id, name, phoneNumber, add, email) {
+            this.id = id;
+            this.name = name;
+            this.phoneNumber = phoneNumber;
+            this.add = add;
+            this.email = email;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getPhoneNumber() {
+            return this.phoneNumber;
+        }
+
+        getAdd() {
+            return this.add;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        setId(id) {
+            this.id = id
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setPhoneNumber(phoneNumber) {
+            this.phoneNumber = phoneNumber;
+        }
+
+        setAdd(add) {
+            this.add = add;
+        }
+
+        setEmail(email) {
+            this.email = email;
+        }
+
+    }
+
+    let customerList = [];
+
+    function displayCustomerList() {
+        for (let i = 0; i < customerList.length; i++) {
+            alert("Mã khách hàng " + customerList[i].getId() + "\n" +
+                "2. Tên Khách hàng: " + customerList[i].getName() + "\n" +
+                "3. Số điện thoại: " + customerList[i].getPhoneNumber() + "\n" +
+                "4. Email: " + customerList[i].getEmail() + "\n" +
+                "5.Địa chỉ" + customerList[i].getAdd());
+        }
+
+    }
+
+    function addNewCustomer() {
+        let id = prompt("Nhập mã Khách hàng");
+        let name = prompt("Nhập tên Khách hàng");
+        let phoneNumber = prompt("Số điện thoại");
+        let add = prompt("Địa chỉ");
+        let email = prompt("Nhập email");
+        let customer = new Customer(id, name, phoneNumber, add, email);
+        customerList.push(customer);
+        displayCustomerList();
+    }
+</script>
+</body>
+</html>

@@ -6,152 +6,153 @@
 </head>
 <body>
     <script>
-        let name = " Hong Ngoc";
-        let dayofb = "14/01/1995";
-        let cmnd = "190002200";
-        let adDr = "Da Nang";
-        let phoneNum = "0909222000";
-        let eMail = "ngoc@.com";
-        let customerType = "Diamond";
-        let disCount = 20;
-        let cusTotal = 2;
-        let dayTotal = 2;
-        let serveType =  "villa";
-        let roomType = "vip";
-        let valueserve = "";
-        if (serveType==="villa"){
-            valueserve = 500;}
-        else if(serveType === "house"){
-            valueserve = 300;
-        }else if(serveType==="room"){
-            valueserve = 100;
-        }
-        let discoutadDr = "";
-        if (adDr==="Quang Nam"){
-            discoutadDr = 5;
-        } else if(adDr==="Hue"){
-            discoutadDr = 10;
-        }else if(adDr ==="Da Nang"){
-            discoutadDr = 20;
-        }
-        let discoutDay = "";
-        if (dayTotal > 7){
-            discoutDay = 30;
-        }else if(dayTotal>=5 && dayTotal <= 7 ){
-            discoutDay = 20;
-        }else if(dayTotal >=2 && dayTotal <= 4){
-            discoutDay = 10;
-        }else {
-            discoutDay = 0;
-        }
-        let discountCus ="";
-        if(customerType==="diamond"){
-            discountCus = 15;
-        } else if(customerType==="platinum"){
-            discountCus= 10;
-        }else if(customerType==="gold"){
-            discountCus=5;
-        }else if(customerType==="sliver"){
-            discountCus=2;
-        }else if(customerType==="member"){
-            discountCus=0;
-        }
-        let totalDiscount = (1-disCount/100)+ discoutadDr + discoutDay + discountCus ;
-        let totalPay = valueserve-totalDiscount;
-        let choose= prompt("1. Show information customer." + "\n" +
-        "2. Edit  information customer." + "\n" +
-        "3. Show the amount to be paid after discount");
-        switch (choose) {
-            case "1":
-                alert("1.Full Name: "+name+ "\n"+
-                    " 2.Day of birth: "+ dayofb+"\n"+
-                    " 3.Identity card number: "+cmnd +"\n"+
-                    " 4.Address: "+adDr+"\n"+
-                    " 5.Phone Number: "+ phoneNum+"\n"+
-                    " 6.Email: "+eMail+"\n"+
-                    " 7.Customer Class: "+customerType+"\n"+
-                    " 8.Discount: "+disCount+"%"+"\n"+
-                    " 9.Number of Guests: "+cusTotal+"\n"+
-                    " 10.Number of days: "+dayTotal+"\n"+
-                    " 11.Type of service: "+serveType+"\n"+
-                    " 12.Kind of room: "+roomType+"\n");
-            break;
-            case "2":
-                let editchoose = prompt("1.Full Name: "+name+ "\n"+
-                    " 2.Day of birth: "+ dayofb+"\n"+
-                    " 3.Identity card number: "+cmnd +"\n"+
-                    " 4.Address: "+adDr+"\n"+
-                    " 5.Phone Number: "+ phoneNum+"\n"+
-                    " 6.Email: "+eMail+"\n"+
-                    " 7.Customer Class: "+customerType+"\n"+
-                    " 8.Discount: "+disCount+"%"+"\n"+
-                    " 9.Number of Guests: "+cusTotal+"\n"+
-                    " 10.Number of days: "+dayTotal+"\n"+
-                    " 11.Type of service: "+serveType+"\n"+
-                    " 12.Kind of room: "+roomType+"\n");
-                        switch (editchoose) {
-                            case "1":
-                                name = prompt("Edit name");
+        while (true) {
+            let name = " Hong Ngoc";
+            let dayofb = "14/01/1995";
+            let cmnd = "190002200";
+            let adDr = "Da Nang";
+            let phoneNum = "0909222000";
+            let eMail = "ngoc@.com";
+            let customerType = "Diamond";
+            let disCount = 20;
+            let cusTotal = 2;
+            let dayTotal = 2;
+            let serveType = "villa";
+            let roomType = "vip";
+            let valueserve = "";
+            if (serveType === "villa") {
+                valueserve = 500;
+            } else if (serveType === "house") {
+                valueserve = 300;
+            } else if (serveType === "room") {
+                valueserve = 100;
+            }
+            let discoutadDr = "";
+            if (adDr === "Quang Nam") {
+                discoutadDr = 5;
+            } else if (adDr === "Hue") {
+                discoutadDr = 10;
+            } else if (adDr === "Da Nang") {
+                discoutadDr = 20;
+            }
+            let discoutDay = "";
+            if (dayTotal > 7) {
+                discoutDay = 30;
+            } else if (dayTotal >= 5 && dayTotal <= 7) {
+                discoutDay = 20;
+            } else if (dayTotal >= 2 && dayTotal <= 4) {
+                discoutDay = 10;
+            } else {
+                discoutDay = 0;
+            }
+            let discountCus = "";
+            if (customerType === "diamond") {
+                discountCus = 15;
+            } else if (customerType === "platinum") {
+                discountCus = 10;
+            } else if (customerType === "gold") {
+                discountCus = 5;
+            } else if (customerType === "sliver") {
+                discountCus = 2;
+            } else if (customerType === "member") {
+                discountCus = 0;
+            }
+            let totalDiscount = (1 - disCount / 100) + discoutadDr + discoutDay + discountCus;
+            let totalPay = valueserve - totalDiscount;
+            let choose = prompt("1. Show information customer." + "\n" +
+                "2. Edit  information customer." + "\n" +
+                "3. Show the amount to be paid after discount");
+            switch (choose) {
+                case "1":
+                    alert("1.Full Name: " + name + "\n" +
+                        " 2.Day of birth: " + dayofb + "\n" +
+                        " 3.Identity card number: " + cmnd + "\n" +
+                        " 4.Address: " + adDr + "\n" +
+                        " 5.Phone Number: " + phoneNum + "\n" +
+                        " 6.Email: " + eMail + "\n" +
+                        " 7.Customer Class: " + customerType + "\n" +
+                        " 8.Discount: " + disCount + "%" + "\n" +
+                        " 9.Number of Guests: " + cusTotal + "\n" +
+                        " 10.Number of days: " + dayTotal + "\n" +
+                        " 11.Type of service: " + serveType + "\n" +
+                        " 12.Kind of room: " + roomType + "\n");
+                    break;
+                case "2":
+                    let editchoose = prompt("1.Full Name: " + name + "\n" +
+                        " 2.Day of birth: " + dayofb + "\n" +
+                        " 3.Identity card number: " + cmnd + "\n" +
+                        " 4.Address: " + adDr + "\n" +
+                        " 5.Phone Number: " + phoneNum + "\n" +
+                        " 6.Email: " + eMail + "\n" +
+                        " 7.Customer Class: " + customerType + "\n" +
+                        " 8.Discount: " + disCount + "%" + "\n" +
+                        " 9.Number of Guests: " + cusTotal + "\n" +
+                        " 10.Number of days: " + dayTotal + "\n" +
+                        " 11.Type of service: " + serveType + "\n" +
+                        " 12.Kind of room: " + roomType + "\n");
+                    switch (editchoose) {
+                        case "1":
+                            name = prompt("Edit name");
                             break;
-                            case "2":
-                                dayofb = prompt("Edit Day of birth");
+                        case "2":
+                            dayofb = prompt("Edit Day of birth");
                             break;
-                            case "3":
-                                cmnd = prompt("Edit Identity card number");
+                        case "3":
+                            cmnd = prompt("Edit Identity card number");
                             break;
-                            case "4":
-                                adDr = prompt("Edit Address");
+                        case "4":
+                            adDr = prompt("Edit Address");
                             break;
-                            case "5":
-                                phoneNum = prompt("Edit Phone Number");
+                        case "5":
+                            phoneNum = prompt("Edit Phone Number");
                             break;
-                            case "6":
-                                customerType = prompt("Edit Customer Class");
+                        case "6":
+                            customerType = prompt("Edit Customer Class");
                             break;
-                            case "7":
-                                eMail = prompt("Edit Email");
+                        case "7":
+                            eMail = prompt("Edit Email");
                             break;
-                            case "8":
-                                disCount = prompt("Edit Discount");
+                        case "8":
+                            disCount = prompt("Edit Discount");
                             break;
-                            case "9":
-                                cusTotal = prompt("Edit Number of Guests");
+                        case "9":
+                            cusTotal = prompt("Edit Number of Guests");
                             break;
-                            case "10":
-                                dayTotal = prompt("Edit Number of days");
+                        case "10":
+                            dayTotal = prompt("Edit Number of days");
                             break;
-                            case "11":
-                                serveType = prompt("Edit Type of service");
+                        case "11":
+                            serveType = prompt("Edit Type of service");
                             break;
-                            case "12":
-                                roomType = prompt("Kind of room");
+                        case "12":
+                            roomType = prompt("Kind of room");
                             break;
-                            default:
-                                alert("Failed");
+                        default:
+                            alert("Failed");
 
 
+                    }
+                    alert("1.Full Name: " + name + "\n" +
+                        " 2.Day of birth: " + dayofb + "\n" +
+                        " 3.Identity card number: " + cmnd + "\n" +
+                        " 4.Address: " + adDr + "\n" +
+                        " 5.Phone Number: " + phoneNum + "\n" +
+                        " 6.Email: " + eMail + "\n" +
+                        " 7.Customer Class: " + customerType + "\n" +
+                        " 8.Discount: " + disCount + "%" + "\n" +
+                        " 9.Number of Guests: " + cusTotal + "\n" +
+                        " 10.Number of days: " + dayTotal + "\n" +
+                        " 11.Type of service: " + serveType + "\n" +
+                        " 12.Kind of room: " + roomType + "\n");
+                    break;
+                case "3":
+                    alert("Total payments :" + totalPay + "$");
+                    break;
+                default:
+                    alert("Please select the functions from the menu");
 
-                }
-                alert("1.Full Name: "+name+ "\n"+
-                    " 2.Day of birth: "+ dayofb+"\n"+
-                    " 3.Identity card number: "+cmnd +"\n"+
-                    " 4.Address: "+adDr+"\n"+
-                    " 5.Phone Number: "+ phoneNum+"\n"+
-                    " 6.Email: "+eMail+"\n"+
-                    " 7.Customer Class: "+customerType+"\n"+
-                    " 8.Discount: "+disCount+"%"+"\n"+
-                    " 9.Number of Guests: "+cusTotal+"\n"+
-                    " 10.Number of days: "+dayTotal+"\n"+
-                    " 11.Type of service: "+serveType+"\n"+
-                    " 12.Kind of room: "+roomType+"\n");
-            break;
-            case "3":
-                alert("Total payments :" +totalPay+ "$");
-            break;
-            default:
-                alert("Please select the functions from the menu");
 
-
+            }
         }
     </script>
 </body>
