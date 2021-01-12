@@ -10,13 +10,17 @@ public class TimGiaTriTrongMang {
 
         System.out.print("Type name of student: ");
         nameStudent= input.nextLine();
+        boolean check = false;
         for(int i =0;i<student.length;i++){
-            if(nameStudent == student[i]){
-                System.out.print(student[i]);
-        }else {
-                System.out.println("This name not alive in array");
-            }
+            if(student[i].equals(nameStudent)){
+                System.out.println("Position of the students in the list " + nameStudent + " is: " + (i + 1));
+                check =true;
+                break;
+                }
+        }if(!check) {
+                System.out.println(nameStudent + " not alive in array");
         }
+
 
     }
 }
