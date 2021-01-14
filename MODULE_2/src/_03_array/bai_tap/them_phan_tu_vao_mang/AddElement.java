@@ -10,19 +10,20 @@ public class AddElement {
         Scanner input = new Scanner(System.in);
         int[] arr = {2,6,8,4,9,1};
 
-            System.out.print(" Enter an element you want to insert: ");
+            System.out.print("Enter an element you want to insert: ");
             int x = input.nextInt();
-            System.out.print("enter position you want to insert: ");
-            int index = input.nextInt();
-            for (int i=0;i<arr.length;i++){
-                if(index<=1||index>arr.length-1){
-                    System.out.print("can't insert element into array: ");
-                }else{
-                    arr[index]= x;
-
+            System.out.print("Enter position you want to insert: ");
+            int index;
+            int[] arr2 = Arrays.copyOf(arr,arr.length + 1);
+            do {
+                System.out.print("can't insert element into array ");
+                index = input.nextInt();
+            }while (index<0||index>arr2.length-1);
+            for (int i=arr2.length-1;i>index;i--){
+                    arr2[i]=arr2[i-1];
                 }
-            }
-        System.out.print(Arrays.toString(arr));
+            arr2[index]= x;
+            System.out.print(Arrays.toString(arr2));
 
 
 
