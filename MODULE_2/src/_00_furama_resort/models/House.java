@@ -42,7 +42,7 @@ public class House extends Services {
 
     @Override
     public String showInfor() {
-        return super.toString() + "House{" +
+        return super.toString() + " House{" +
                 "tyOfRoom='" + tyOfRoom + '\'' +
                 ", otherConvenient='" + otherConvenient + '\'' +
                 ", numberOfFloors=" + numberOfFloors +

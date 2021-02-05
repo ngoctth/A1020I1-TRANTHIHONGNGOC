@@ -22,7 +22,7 @@ public class Room extends Services{
 
     @Override
     public String showInfor() {
-        return super.toString() + "Room{" +
+        return super.toString() + " Room{" +
                 "freeServices='" + freeServices + '\'' +
                 '}' ;
     }

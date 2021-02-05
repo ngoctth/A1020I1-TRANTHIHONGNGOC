@@ -53,7 +53,7 @@ public class Villa extends Services {
 
     @Override
     public String showInfor() {
-        return super.toString()+ "Villa{" +
+        return super.toString()+ " Villa{" +
                 "tyOfRoom='" + tyOfRoom + '\'' +
                 ", otherConvenient='" + otherConvenient + '\'' +
                 ", poolArea=" + poolArea +
