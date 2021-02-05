@@ -46,4 +46,10 @@ public class TennisGame {
         else score ="Win for player2";
         return score;
     }
+
+    public static void main(String[] args) {
+        TennisGame game = new TennisGame();
+        System.out.println(TennisGame.getScore("nam","hoa",3,3));
+
+    }
 }
