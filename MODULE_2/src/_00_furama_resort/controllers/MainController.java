@@ -1,10 +1,12 @@
 package _00_furama_resort.controllers;
 
+import _00_furama_resort.manager.ServiceManager;
 import sun.applet.Main;
 
 import java.util.Scanner;
 
 public class MainController {
+        ServiceManager serviceManager = new ServiceManager();
         public void displayMainMenu(Scanner input) {
             System.out.print(
                     "1.\tAdd New Services\n" +
@@ -32,7 +34,7 @@ public class MainController {
                 case 7:
                     break;
                 default:
-                    System.out.println("Please choose the service of menu");
+                    System.out.print("Please choose the service of menu");
                     displayMainMenu(input);
             }
         }
@@ -47,9 +49,23 @@ public class MainController {
                     "5.\tExit\n"+ " Choose service you want: ");
             int choice;
             choice = input.nextInt();
-
+            switch (choice) {
+                case 1: serviceManager.addNewVilla();
+                    break;
+                case 2: serviceManager.addNewHouse();
+                    break;
+                case 3: serviceManager.addNewRoom();
+                    break;
+                case 4: displayMainMenu(input);
+                    break;
+                case 5:
+                    System.out.println("Goodbye and see you soon");
+                    break;
+                default:
+                    System.out.print("Please choose the service of menu");
+                    displayMainMenu(input);
+            }
         }
-
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

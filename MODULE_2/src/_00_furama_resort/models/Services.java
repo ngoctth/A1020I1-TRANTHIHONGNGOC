@@ -81,6 +81,7 @@ public abstract class Services {
                 ", typeForRent='" + typeForRent + '\'' +
                 '}';
     }
+
 }
 
 
