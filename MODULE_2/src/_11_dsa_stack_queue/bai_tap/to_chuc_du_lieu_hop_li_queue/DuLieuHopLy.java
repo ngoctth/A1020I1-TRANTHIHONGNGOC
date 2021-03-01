@@ -17,16 +17,16 @@ public class DuLieuHopLy {
         nhanVien[5] = new NhanVien("Ngoc","Nam","2/09/1999");
         String output ="";
         for (int i=0;i<nhanVien.length;i++) {
-            if (nhanVien[i].sex == "Nu") {
+            if (nhanVien[i].gender == "Nu") {
                 nu.offer(nhanVien[i]);
             } else {
                 nam.offer(nhanVien[i]);
             }
             if (!nu.isEmpty()) {
-                output += nu.poll();
+                output += nu.poll() + "\n";
             }
             if (!nam.isEmpty()) {
-                output += nam.poll();
+                output += nam.poll() + "\n";
             }
         }
         System.out.println(output);
