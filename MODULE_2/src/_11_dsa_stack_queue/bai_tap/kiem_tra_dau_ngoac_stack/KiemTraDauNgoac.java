@@ -21,5 +21,10 @@ public class KiemTraDauNgoac {
                 }
             }
         }
+        if(stack.empty()){
+            System.out.println("right");
+        }else
+            System.out.println("wrong");
+
     }
 }
