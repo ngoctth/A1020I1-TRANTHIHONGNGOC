@@ -22,6 +22,9 @@ public class Menu {
         System.out.println("Thêm vào thành công");
     }
 
+    public void addProduct(Product product, ArrayList<Product> list){
+        list.add(product);
+    }
     public void editProduct(Scanner input, ArrayList<Product> list){
         System.out.println("Nhập Id sản phẩm muốn sửa: ");
         int id = input.nextInt();
@@ -65,15 +68,16 @@ public class Menu {
     }
 
     public void displayProduct( ArrayList<Product> list){
+        String str = "";
         if(!list.isEmpty()) {
-            System.out.println(list);
+            str += list.toString();
+            System.out.println(str);
         }else{
             System.out.println("Danh sách sản phẩm trống!!");
         }
     }
     public void findNameProduct(Scanner input,ArrayList<Product> list ){
         System.out.println("Nhập tên sản phẩm bạn muốn tìm: ");
-        input.nextLine();
         String nameProduct = input.nextLine();
         String check = checkNameProduct(nameProduct,list);
         if(nameProduct.equals("Không tìm thấy")){
@@ -92,11 +96,11 @@ public class Menu {
                     string += i.toString();
                     string += "\n";
                 }
-                if (string.length() == 0) {
-                    return " Không tìm thấy";
-                } else {
-                    return string;
-                }
+            }
+            if (string.length() == 0) {
+                return " Không tìm thấy";
+            } else {
+                return string;
             }
         }
         return "Không tìm thấy";
